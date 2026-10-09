@@ -1,40 +1,95 @@
 {
   "papers": [
     {
-      "title": "Review on Water Quality Monitoring Systems for Aquaculture",
-      "type": "Conference/proceedings paper",
-      "status": "Paper and thesis citation present",
-      "dates": "2019 per thesis",
-      "confidence": "Strongly inferred",
-      "doi": null,
-      "evidence_ids": [
-        "E104",
-        "E016"
-      ]
-    },
-    {
-      "title": "A review on WSN based energy efficient water quality monitoring and reporting systems for aquaculture",
-      "type": "Conference paper",
-      "status": "Acceptance and presentation documented",
-      "dates": "Accepted 2019-09-06; presented 2019-09-21",
+      "title": "Water Quality Prediction for Smart Aquaculture Using Hybrid Deep Learning Models",
+      "type": "Journal article",
+      "status": "Published, IEEE Access",
+      "dates": "Received 2022-05-24; accepted 2022-06-01; published 2022-06-06",
       "confidence": "Verified",
-      "doi": null,
+      "doi": "10.1109/ACCESS.2022.3180482",
       "evidence_ids": [
-        "E105",
-        "E004"
-      ]
+        "E101"
+      ],
+      "scholar_citations": 218,
+      "citation_checked": "9 October 2026"
     },
     {
-      "title": "Scheduling-Based Energy-Efficient Water Quality Monitoring System for Aquaculture",
-      "type": "Proceedings paper",
-      "status": "Accepted; thesis lists published proceedings",
-      "dates": "Accepted 2020-03-20; proceedings 2021",
-      "confidence": "Verified acceptance; Strongly inferred publication date",
+      "title": "Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture",
+      "type": "Journal article",
+      "status": "Publisher copy, Aquaculture International; four-author byline",
+      "dates": "Received 2023-12-02; accepted 2024-05-30",
+      "confidence": "Verified",
+      "doi": "10.1007/s10499-024-01574-5",
+      "evidence_ids": [
+        "E118"
+      ],
+      "scholar_citations": 40,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "Water Quality Prediction System Based on Adam Optimised LSTM Neural Network for Aquaculture: A Case Study in Kerala, India",
+      "type": "Journal article",
+      "status": "Published, IEI Series B",
+      "dates": "Received 2021-01-07; accepted 2022-09-07; online 2022-10-10; issue December 2022",
+      "confidence": "Verified",
+      "doi": "10.1007/s40031-022-00806-7",
+      "evidence_ids": [
+        "E102"
+      ],
+      "scholar_citations": 12,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "Accurate Dissolved Oxygen Prediction for Aquaculture Using Stacked Ensemble Machine Learning Model",
+      "type": "Journal article",
+      "status": "Publisher copy, National Academy Science Letters",
+      "dates": "Received 2022-06-12; revised 2022-10-24; accepted 2023-01-04",
+      "confidence": "Verified",
+      "doi": "10.1007/s40009-023-01213-2",
+      "evidence_ids": [
+        "E116"
+      ],
+      "scholar_citations": 12,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "Deep Learning Enhanced Virtual Sensing: A Cost-Effective Approach for Water Quality Monitoring in Aquaculture",
+      "type": "Journal article",
+      "status": "Published, IEEE Transactions on AgriFood Electronics, 3(2), 486-496",
+      "dates": "2025; issue metadata September 2025",
+      "confidence": "Verified publisher-deposited Crossref metadata",
+      "doi": "10.1109/TAFE.2025.3569481",
+      "evidence_ids": [
+        "E013",
+        "E012"
+      ],
+      "metadata_source": "https://api.crossref.org/works/10.1109/TAFE.2025.3569481",
+      "scholar_citations": 4,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "ABD-RNN: Attention based Bi-directional Deep Learning Recurrent Neural Networks for Aquaculture Water Quality Prediction",
+      "type": "Journal manuscript",
+      "status": "Historical Expert Systems with Applications review status; final outcome unresolved",
+      "dates": "Review response 2023-03-20 per synopsis minutes",
+      "confidence": "Verified historical record; Uncertain current status",
       "doi": null,
       "evidence_ids": [
-        "E108",
+        "E034",
         "E016"
-      ]
+      ],
+      "scholar_citations": null,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "Random Forest Regression based Water Quality Prediction for Smart Aquaculture",
+      "type": "Conference paper",
+      "status": "Published conference paper, IEEE I3CS",
+      "dates": "2023",
+      "confidence": "Verified publisher-deposited metadata and Scholar profile",
+      "doi": "10.1109/I3CS58314.2023.10127488",
+      "scholar_citations": 14,
+      "citation_checked": "9 October 2026"
     },
     {
       "title": "Water Quality Monitoring and Reporting System for Aquaculture with Solar Energy Harvesting",
@@ -48,51 +103,9 @@
         "E114",
         "E115",
         "E016"
-      ]
-    },
-    {
-      "title": "Water Quality Prediction for Smart Aquaculture Using Hybrid Deep Learning Models",
-      "type": "Journal article",
-      "status": "Published, IEEE Access",
-      "dates": "Received 2022-05-24; accepted 2022-06-01; published 2022-06-06",
-      "confidence": "Verified",
-      "doi": "10.1109/ACCESS.2022.3180482",
-      "evidence_ids": [
-        "E101"
-      ]
-    },
-    {
-      "title": "Water Quality Prediction System Based on Adam Optimised LSTM Neural Network for Aquaculture: A Case Study in Kerala, India",
-      "type": "Journal article",
-      "status": "Published, IEI Series B",
-      "dates": "Received 2021-01-07; accepted 2022-09-07; online 2022-10-10; issue December 2022",
-      "confidence": "Verified",
-      "doi": "10.1007/s40031-022-00806-7",
-      "evidence_ids": [
-        "E102"
-      ]
-    },
-    {
-      "title": "Accurate Dissolved Oxygen Prediction for Aquaculture Using Stacked Ensemble Machine Learning Model",
-      "type": "Journal article",
-      "status": "Publisher copy, National Academy Science Letters",
-      "dates": "Received 2022-06-12; revised 2022-10-24; accepted 2023-01-04",
-      "confidence": "Verified",
-      "doi": "10.1007/s40009-023-01213-2",
-      "evidence_ids": [
-        "E116"
-      ]
-    },
-    {
-      "title": "Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture",
-      "type": "Journal article",
-      "status": "Publisher copy, Aquaculture International; four-author byline",
-      "dates": "Received 2023-12-02; accepted 2024-05-30",
-      "confidence": "Verified",
-      "doi": "10.1007/s10499-024-01574-5",
-      "evidence_ids": [
-        "E118"
-      ]
+      ],
+      "scholar_citations": 12,
+      "citation_checked": "9 October 2026"
     },
     {
       "title": "LSTM and GRU based Accurate Water Quality Prediction for Smart Aquaculture",
@@ -103,7 +116,23 @@
       "doi": "10.1088/1742-6596/2466/1/012027",
       "evidence_ids": [
         "E103"
-      ]
+      ],
+      "scholar_citations": 10,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "Review on Water Quality Monitoring Systems for Aquaculture",
+      "type": "Conference/proceedings paper",
+      "status": "Paper and thesis citation present",
+      "dates": "2019 per thesis",
+      "confidence": "Strongly inferred",
+      "doi": null,
+      "evidence_ids": [
+        "E104",
+        "E016"
+      ],
+      "scholar_citations": 9,
+      "citation_checked": "9 October 2026"
     },
     {
       "title": "DHRNN: Deep Hybrid Recurrent Neural Networks for Aquaculture Water Quality Prediction",
@@ -115,31 +144,37 @@
       "evidence_ids": [
         "E016",
         "E012"
-      ]
+      ],
+      "scholar_citations": 2,
+      "citation_checked": "9 October 2026"
     },
     {
-      "title": "ABD-RNN: Attention based Bi-directional Deep Learning Recurrent Neural Networks for Aquaculture Water Quality Prediction",
-      "type": "Journal manuscript",
-      "status": "Historical Expert Systems with Applications review status; final outcome unresolved",
-      "dates": "Review response 2023-03-20 per synopsis minutes",
-      "confidence": "Verified historical record; Uncertain current status",
+      "title": "A review on WSN based energy efficient water quality monitoring and reporting systems for aquaculture",
+      "type": "Conference paper",
+      "status": "Acceptance and presentation documented",
+      "dates": "Accepted 2019-09-06; presented 2019-09-21",
+      "confidence": "Verified",
       "doi": null,
       "evidence_ids": [
-        "E034",
+        "E105",
+        "E004"
+      ],
+      "scholar_citations": null,
+      "citation_checked": "9 October 2026"
+    },
+    {
+      "title": "Scheduling-Based Energy-Efficient Water Quality Monitoring System for Aquaculture",
+      "type": "Proceedings paper",
+      "status": "Accepted; thesis lists published proceedings",
+      "dates": "Accepted 2020-03-20; proceedings 2021",
+      "confidence": "Verified acceptance; Strongly inferred publication date",
+      "doi": null,
+      "evidence_ids": [
+        "E108",
         "E016"
-      ]
-    },
-    {
-      "title": "Deep Learning Enhanced Virtual Sensing: A Cost-Effective Approach for Water Quality Monitoring in Aquaculture",
-      "type": "Journal manuscript / claimed later article",
-      "status": "AgriFood revision decision; bibliography claims 2025 publication",
-      "dates": "Decision 2025-02-10; deadline 2025-04-11",
-      "confidence": "Verified revision; Uncertain final publication",
-      "doi": null,
-      "evidence_ids": [
-        "E013",
-        "E012"
-      ]
+      ],
+      "scholar_citations": 0,
+      "citation_checked": "9 October 2026"
     }
   ],
   "patents": [

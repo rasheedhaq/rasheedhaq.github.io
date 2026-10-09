@@ -1,0 +1,87 @@
+{
+  "checked": "9 October 2026",
+  "source": "https://scholar.google.com/citations?user=ionCr1oAAAAJ&hl=en&pagesize=100",
+  "metrics": {
+    "Citations": "344",
+    "h-index": "8",
+    "i10-index": "7"
+  },
+  "articles": [
+    {
+      "title": "Water quality prediction for smart aquaculture using hybrid deep learning models.",
+      "citations": 218,
+      "year": "2022"
+    },
+    {
+      "title": "Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture",
+      "citations": 40,
+      "year": "2024"
+    },
+    {
+      "title": "Random forest regression based water quality prediction for smart aquaculture",
+      "citations": 14,
+      "year": "2023"
+    },
+    {
+      "title": "Accurate Dissolved Oxygen Prediction for Aquaculture Using Stacked Ensemble Machine Learning Model: RAH Kozhiparamban et al.",
+      "citations": 12,
+      "year": "2023"
+    },
+    {
+      "title": "Water quality prediction system based on adam optimised lstm neural network for aquaculture: A case study in kerala, india",
+      "citations": 12,
+      "year": "2022"
+    },
+    {
+      "title": "Water quality monitoring and reporting system for aquaculture with solar energy harvesting",
+      "citations": 12,
+      "year": "2020"
+    },
+    {
+      "title": "Lstm and gru based accurate water quality prediction for smart aquaculture",
+      "citations": 10,
+      "year": "2023"
+    },
+    {
+      "title": "Review on water quality monitoring systems for aquaculture",
+      "citations": 9,
+      "year": "2019"
+    },
+    {
+      "title": "Water quality prediction system based on adam optimised LSTM neural network for aquaculture: A case study in Kerala, India",
+      "citations": 8,
+      "year": "2022"
+    },
+    {
+      "title": "Deep learning enhanced virtual sensing: A cost-effective approach for water quality monitoring in aquaculture",
+      "citations": 4,
+      "year": "2025"
+    },
+    {
+      "title": "Performance analysis of machine learning and deep learning techniques in diagnosing imbalance using machine fault simulator-a case study",
+      "citations": 3,
+      "year": "2025"
+    },
+    {
+      "title": "DHRNN: deep hybrid recurrent neural networks for aquaculture water quality prediction",
+      "citations": 2,
+      "year": "2022"
+    },
+    {
+      "title": "DHRNN: Deep Hybrid Recurrent Neural Networks for Aquaculture Water Quality",
+      "citations": 0,
+      "year": "2023"
+    },
+    {
+      "title": "Scheduling-Based Energy-Efficient Water Quality Monitoring System for Aquaculture",
+      "citations": 0,
+      "year": "2021"
+    },
+    {
+      "title": "Review on Water Quality Monitoring Systems for Aquaculture",
+      "citations": 0,
+      "year": ""
+    }
+  ],
+  "note": "Profile contains duplicate titles; counts are not summed across duplicate entries."
+}

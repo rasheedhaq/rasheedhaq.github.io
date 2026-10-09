@@ -375,6 +375,11 @@ section { margin-bottom: 60px; scroll-margin-top: 50px; }
   .summary-stat:last-child { border-bottom: none; }
 }
 
+.research-links { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 24px; }
+.research-links a { border:1px solid var(--border); background:var(--surface); padding:12px 16px; font:500 11px/1.5 'IBM Plex Mono',monospace; }
+.research-links a:hover { background:#111; color:#c8f135; border-color:#111; }
+.research-links a:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
+@media print { .research-links { display:none; } }
 </style>
 </head>
 <body>
@@ -413,8 +418,6 @@ section { margin-bottom: 60px; scroll-margin-top: 50px; }
   <a href="#summary">01 Summary</a>
   <a href="#experience">02 Experience</a>
   <a href="#research">03 Research</a>
-  <a href="research/index.html">PhD Archive</a>
-  <a href="research/thesis.html">Read Thesis</a><a href="https://scholar.google.com/citations?user=ionCr1oAAAAJ&hl=en&pagesize=100">Google Scholar</a>
   <a href="#projects">04 Projects</a>
   <a href="#skills">05 Skills</a>
   <a href="#education">06 Education</a>
@@ -526,6 +529,13 @@ section { margin-bottom: 60px; scroll-margin-top: 50px; }
   <!-- 03 RESEARCH -->
   <section id="research">
     <div class="section-header"><span class="section-num">03</span><span class="section-title">Patents &amp; Publications</span></div>
+    <div class="research-links" aria-label="Research resources">
+      <a href="research/index.html">PhD Research &rarr;</a>
+      <a href="research/thesis.html">Read Thesis &rarr;</a>
+      <a href="research/publications.html">All Papers &rarr;</a>
+      <a href="research/patents.html">Patent Certificates &rarr;</a>
+      <a href="https://scholar.google.com/citations?user=ionCr1oAAAAJ&amp;hl=en">Google Scholar &nearr;</a>
+    </div>
     <div class="bucket-grid" style="margin-bottom:18px">
       <div class="bucket"><div class="bucket-name">Granted patents</div><div class="bucket-target">3</div><div class="bucket-detail">Three Indian patent grants, issued in 2022, 2024 and 2026. Certificates available in the PhD archive.</div><span class="bucket-account">Indian Patent Office</span></div>
       <div class="bucket"><div class="bucket-name">Indexed journals</div><div class="bucket-target">5</div><div class="bucket-detail">IEEE Access, IEEE TAgriFood Electronics, Springer IEI, NASL, Aquaculture International.</div><span class="bucket-account">2022–2025</span></div>

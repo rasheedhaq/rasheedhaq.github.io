@@ -1,0 +1,168 @@
+{
+  "papers": [
+    {
+      "title": "Review on Water Quality Monitoring Systems for Aquaculture",
+      "type": "Conference/proceedings paper",
+      "status": "Paper and thesis citation present",
+      "dates": "2019 per thesis",
+      "confidence": "Strongly inferred",
+      "doi": null,
+      "evidence_ids": [
+        "E104",
+        "E016"
+      ]
+    },
+    {
+      "title": "A review on WSN based energy efficient water quality monitoring and reporting systems for aquaculture",
+      "type": "Conference paper",
+      "status": "Acceptance and presentation documented",
+      "dates": "Accepted 2019-09-06; presented 2019-09-21",
+      "confidence": "Verified",
+      "doi": null,
+      "evidence_ids": [
+        "E105",
+        "E004"
+      ]
+    },
+    {
+      "title": "Scheduling-Based Energy-Efficient Water Quality Monitoring System for Aquaculture",
+      "type": "Proceedings paper",
+      "status": "Accepted; thesis lists published proceedings",
+      "dates": "Accepted 2020-03-20; proceedings 2021",
+      "confidence": "Verified acceptance; Strongly inferred publication date",
+      "doi": null,
+      "evidence_ids": [
+        "E108",
+        "E016"
+      ]
+    },
+    {
+      "title": "Water Quality Monitoring and Reporting System for Aquaculture with Solar Energy Harvesting",
+      "type": "Conference paper/system study",
+      "status": "Accepted; paper preserved; event dates conflict",
+      "dates": "Accepted 2020-06-23; event July vs October 2020",
+      "confidence": "Verified acceptance; Uncertain event date",
+      "doi": null,
+      "evidence_ids": [
+        "E111",
+        "E114",
+        "E115",
+        "E016"
+      ]
+    },
+    {
+      "title": "Water Quality Prediction for Smart Aquaculture Using Hybrid Deep Learning Models",
+      "type": "Journal article",
+      "status": "Published, IEEE Access",
+      "dates": "Received 2022-05-24; accepted 2022-06-01; published 2022-06-06",
+      "confidence": "Verified",
+      "doi": "10.1109/ACCESS.2022.3180482",
+      "evidence_ids": [
+        "E101"
+      ]
+    },
+    {
+      "title": "Water Quality Prediction System Based on Adam Optimised LSTM Neural Network for Aquaculture: A Case Study in Kerala, India",
+      "type": "Journal article",
+      "status": "Published, IEI Series B",
+      "dates": "Received 2021-01-07; accepted 2022-09-07; online 2022-10-10; issue December 2022",
+      "confidence": "Verified",
+      "doi": "10.1007/s40031-022-00806-7",
+      "evidence_ids": [
+        "E102"
+      ]
+    },
+    {
+      "title": "Accurate Dissolved Oxygen Prediction for Aquaculture Using Stacked Ensemble Machine Learning Model",
+      "type": "Journal article",
+      "status": "Publisher copy, National Academy Science Letters",
+      "dates": "Received 2022-06-12; revised 2022-10-24; accepted 2023-01-04",
+      "confidence": "Verified",
+      "doi": "10.1007/s40009-023-01213-2",
+      "evidence_ids": [
+        "E116"
+      ]
+    },
+    {
+      "title": "Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture",
+      "type": "Journal article",
+      "status": "Publisher copy, Aquaculture International; four-author byline",
+      "dates": "Received 2023-12-02; accepted 2024-05-30",
+      "confidence": "Verified",
+      "doi": "10.1007/s10499-024-01574-5",
+      "evidence_ids": [
+        "E118"
+      ]
+    },
+    {
+      "title": "LSTM and GRU based Accurate Water Quality Prediction for Smart Aquaculture",
+      "type": "Conference-series article",
+      "status": "Published copy, Journal of Physics: Conference Series 2466, 012027",
+      "dates": "2023",
+      "confidence": "Verified",
+      "doi": "10.1088/1742-6596/2466/1/012027",
+      "evidence_ids": [
+        "E103"
+      ]
+    },
+    {
+      "title": "DHRNN: Deep Hybrid Recurrent Neural Networks for Aquaculture Water Quality Prediction",
+      "type": "Proceedings chapter",
+      "status": "Listed in thesis and bibliography; 2022 conference vs 2023 proceedings ambiguity",
+      "dates": "2022/2023",
+      "confidence": "Strongly inferred",
+      "doi": null,
+      "evidence_ids": [
+        "E016",
+        "E012"
+      ]
+    },
+    {
+      "title": "ABD-RNN: Attention based Bi-directional Deep Learning Recurrent Neural Networks for Aquaculture Water Quality Prediction",
+      "type": "Journal manuscript",
+      "status": "Historical Expert Systems with Applications review status; final outcome unresolved",
+      "dates": "Review response 2023-03-20 per synopsis minutes",
+      "confidence": "Verified historical record; Uncertain current status",
+      "doi": null,
+      "evidence_ids": [
+        "E034",
+        "E016"
+      ]
+    },
+    {
+      "title": "Deep Learning Enhanced Virtual Sensing: A Cost-Effective Approach for Water Quality Monitoring in Aquaculture",
+      "type": "Journal manuscript / claimed later article",
+      "status": "AgriFood revision decision; bibliography claims 2025 publication",
+      "dates": "Decision 2025-02-10; deadline 2025-04-11",
+      "confidence": "Verified revision; Uncertain final publication",
+      "doi": null,
+      "evidence_ids": [
+        "E013",
+        "E012"
+      ]
+    }
+  ],
+  "patents": [
+    {
+      "number": "397595",
+      "title": "Virtual Sensing System for Water Quality Monitoring and Method Thereof",
+      "grant_date": "25 May 2022",
+      "evidence_id": "E003",
+      "certificate": "documents/patents/397595-grant-certificate.pdf"
+    },
+    {
+      "number": "552671",
+      "title": "Deep Learning Based Virtual Sensing Method and System for Low-Cost Aquaculture Water Quality Monitoring",
+      "grant_date": "21 October 2024",
+      "evidence_id": "E002",
+      "certificate": "documents/patents/552671-grant-certificate.pdf"
+    },
+    {
+      "number": "579506",
+      "title": "Hybrid Deep Learning Based Method and System for Aquaculture Water Quality Prediction",
+      "grant_date": "30 January 2026",
+      "evidence_id": "E001",
+      "certificate": "documents/patents/579506-grant-certificate.pdf"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+/* Justify prose while keeping labels, headings and short metadata readable. */
+p:not(.date):not(.label):not(.subtitle):not(.contact-line):not(.exp-company),
+.intro-block, .summary-stat-detail, .output-body {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.person-name {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: left;
+  text-indent: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.role { overflow-wrap: normal; }
+@media (max-width: 640px) {
+  p, .intro-block, .summary-stat-detail, .output-body { text-align: left !important; }
+  object[type="application/pdf"] { display: none; }
+}

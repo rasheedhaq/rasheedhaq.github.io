@@ -16,6 +16,10 @@ p:not(.date):not(.label):not(.subtitle):not(.contact-line):not(.exp-company),
   word-break: normal;
 }
 .role { overflow-wrap: normal; }
+main p { max-width: none; }
+main h2 { margin-bottom: 16px; }
+main h2 + p { margin-top: 0; }
+.thesis-details { font-size: 13px; }
 @media (max-width: 640px) {
   p, .intro-block, .summary-stat-detail, .output-body { text-align: left !important; }
   object[type="application/pdf"] { display: none; }

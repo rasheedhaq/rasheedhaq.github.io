@@ -27,3 +27,10 @@ No raw archive, new PDF, dataset or LaTeX bundle is included in this release. Ex
 ## Updating
 Add a case study only after reading its supporting source and checking every included asset. Keep claims tied to a paper or implementation. Prefer one canonical file/link over duplicate PDFs. When a source changes, update its case study and run the site validator plus desktop/mobile browser checks.
 
+## Follow-up review
+Mobile navigation now wraps instead of concealing links horizontally. Case studies use a visual section marker without incorrectly announcing the lab index as the current page. Removed defensive review-note phrasing while retaining published-result attribution and practical reproduction requirements. Card summaries are left aligned to avoid uneven word spacing.
+
+Run `python research/validate_site.py` for local resources and PDF readability. Run `node scripts/check_lab.cjs` with Playwright available and Microsoft Edge installed for all six lab pages at 320, 390, 768 and 1440 pixels. The browser check covers overflow, navigation visibility, current-page indicators, story sections and safe new-tab links. Set `LAB_SCREENSHOTS` to an existing directory for visual review images.
+
+The original Pages build succeeded but its deploy job remained waiting during review. The environment permits the main branch and has no listed required reviewers; the available API responses did not establish why deployment is waiting. No environment protection settings were changed.
+

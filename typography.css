@@ -4,6 +4,10 @@
 .resume-actions .resume-primary { background: #c8f135; color: #111; padding: 10px 16px; text-decoration: none; font-weight: 600; }
 .resume-actions .resume-primary:hover { background: #dcff68; }
 .resume-actions a:focus-visible { outline: 2px solid #c8f135; outline-offset: 5px; }
+.nav .nav-resume { background: #c8f135; color: #111; font-weight: 600; }
+.nav .nav-resume:hover { background: #dcff68; color: #111; }
+#resume .resume-actions { margin-top: 20px; }
+#resume .resume-actions a:not(.resume-primary) { color: var(--ink); }
 .cover-name, .cover-title, .cover-desc { text-align: left !important; }
 @media (max-width: 900px) {
   .cover-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }

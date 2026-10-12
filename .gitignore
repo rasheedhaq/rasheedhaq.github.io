@@ -1,0 +1,16 @@
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+# Local tooling
+__pycache__/
+node_modules/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+# CV work logs are private inputs, never public outputs
+CV_Master_Log*.md

@@ -17,7 +17,7 @@ class Links(HTMLParser):
 
 
 errors = []
-pages = [ROOT.parent / 'index.html', *ROOT.glob('*.html')]
+pages = [ROOT.parent / 'index.html', ROOT.parent / 'index_ats.html', ROOT.parent / 'cv/index.html', *ROOT.glob('*.html')]
 for page in pages:
     parser = Links()
     parser.feed(page.read_text(encoding='utf-8'))
@@ -26,7 +26,7 @@ for page in pages:
         if not url.scheme and not url.netloc and url.path:
             if not (page.parent / unquote(url.path)).exists():
                 errors.append((str(page), link))
-pdfs = list((ROOT / 'documents').rglob('*.pdf'))
+pdfs = list((ROOT / 'documents').rglob('*.pdf')) + list((ROOT.parent / 'cv').rglob('*.pdf'))
 for pdf in pdfs:
     result = subprocess.run(['pdfinfo', str(pdf)], capture_output=True)
     if result.returncode:

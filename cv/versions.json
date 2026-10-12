@@ -1,5 +1,11 @@
 {
   "latest": {
+    "date": "2026-10-12",
+    "source_filename": "Rasheed_Abdul_Haq_Resume_12OCT2026.tex",
+    "source_sha256": "5434a318de00e846fafc9cd369cfb4c3a4d7ff6e19a721969893cc9b6ad65cf6",
+    "pdf_sha256": "0a88da048b5a2237106fa0734577701db8775533759b6b966d41546a68c5a407"
+  },
+  "previous": {
     "date": "2026-08-04",
     "source_filename": "Rasheed_Abdul_Haq_Resume_04AUG2026.tex",
     "source_sha256": "60df5b9626444d9c6c68c6bcc1571d7b817244aec44ebae4543e33f1c3a27891",

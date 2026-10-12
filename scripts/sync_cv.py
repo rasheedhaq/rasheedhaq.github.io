@@ -44,6 +44,31 @@ def update_web(source):
         if marker not in page:
             downloads = marker + '\n<p style="padding:12px 20px;text-align:center"><a href="cv/latest/resume.pdf">Download latest CV (PDF)</a> | <a href="cv/index.html">Current and previous CV</a></p>\n'
             page = page.replace('<body>', '<body>\n' + downloads, 1)
+        # Keep web research outputs beside the NIT role, as requested.
+        if name == 'index.html':
+            start = page.index('<section id="research">')
+            end = page.index('</section>', start) + len('</section>')
+            block = page[start:end]
+            page = page[:start] + page[end:]
+            org = page.index('MEA Engineering College', page.index('<body>'))
+            insertion = page.rfind('<div class="exp-item">', 0, org)
+            page = page[:insertion] + block + '\n\n' + page[insertion:]
+            page = page.replace('8 years in AI/ML', '8+ years across AI research and ML')
+            page = page.replace('8 years applied AI/ML', '8+ years across AI research and applied ML')
+            page = page.replace('Production ML across vision, time-series, and LLM systems from research to deployment.', 'AI research and applied ML across vision, time-series, and LLM systems.')
+        else:
+            start = page.index('<!-- ===== PATENTS ===== -->')
+            end = page.index('<div class="exp-entry">', start)
+            project_marker = page.find('<!-- ===== SELECTED PROJECTS ===== -->', start, end)
+            if project_marker >= 0:
+                end = project_marker
+            block = page[start:end]
+            page = page[:start] + page[end:]
+            org = page.index('MEA Engineering College', page.index('<body>'))
+            insertion = page.rfind('<div class="exp-entry">', 0, org)
+            page = page[:insertion] + block + page[insertion:]
+            page = re.sub(r'<p class="pub-entry">[^\n]*Attention-Driven LSTM[^\n]*</p>', '<p class="pub-entry">Rahul Gandh D, Harigovindan V P, Rasheed Abdul Haq K P, and Amrtha Bhide, "Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture," <em>Aquaculture International</em>, vol. 32, pp. 8455–8478, 2024. <a href="https://doi.org/10.1007/s10499-024-01574-5">DOI</a></p>', page)
+        page = '\n'.join(line.rstrip() for line in page.splitlines()) + '\n'
         path.write_text(page, encoding='utf-8')
 
 def sync(source, pdf, update_pages=True):

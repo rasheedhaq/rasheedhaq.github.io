@@ -1,0 +1,265 @@
+\documentclass[a4paper,10pt]{article} 
+\usepackage[left=1.5cm,right=1cm,top=1.5cm,bottom=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage[style=english]{csquotes} 
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}  % Ensure installed
+
+\fancyhf{}
+
+\setlist[itemize]{left=0.5cm,label={\tiny$\bullet$},itemsep=0.5ex}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
+
+\begin{document}
+	\pagestyle{empty}
+	
+	\begin{center}
+		{\Huge\bfseries Rasheed Abdul Haq Kozhiparamban}
+	\end{center}
+	
+	\vspace{-2ex}
+	
+	\begin{center}
+		\begin{tabular}{rl}
+			\faIcon{envelope}  & \href{mailto:rasheedabdulhaq@gmail.com}{rasheedabdulhaq@gmail.com} \\			
+			\faIcon{linkedin}  & \href{https://www.linkedin.com/in/rasheedabdulhaq}{linkedin.com/in/rasheedabdulhaq} \\
+			\faIcon{github}  & \href{https://github.com/rasheedhaq}{github.com/rasheedhaq} \\
+			\faIcon{map-marker-alt}  & Bengaluru, Karnataka, India \\
+			\faIcon{phone}  & \href{tel:+919400472727}{+91 94004 72727} \\
+		\end{tabular}
+	\end{center}
+	
+
+
+
+\section{Summary}
+\begin{itemize}[left=0pt]
+	
+	\item Senior AI/ML Engineer with a \textbf{Ph.D.} in Artificial Intelligence and 8+ years of experience delivering production AI systems across \textbf{Computer Vision}, \textbf{Industrial AI}, \textbf{Generative AI}, \textbf{Predictive Analytics}, and \textbf{Time-Series Forecasting}.
+	
+	\item Proven expertise in designing and deploying end-to-end AI solutions spanning data engineering, feature engineering, model development, validation, MLOps, inference, and human-in-the-loop workflows for enterprise and industrial applications.
+	
+	\item Hands-on experience with \textbf{Python}, \textbf{PyTorch}, \textbf{TensorFlow}, \textbf{OpenCV}, \textbf{YOLOv8}, \textbf{Azure ML}, \textbf{AWS Bedrock}, and modern LLM ecosystems for scalable AI development and deployment.
+	
+	\item Author of peer-reviewed IEEE publications and three granted Indian patents in Deep Learning, Virtual Sensing, and Predictive Analytics.
+	
+\end{itemize}
+	
+	\section{Education}
+	\begin{itemize}
+		\item \textbf{Ph.D.} in Artificial Intelligence (Deep Learning, Predictive Modeling \& Time-Series Forecasting), National Institute of Technology (NIT), Puducherry, India, 2018 -- 2024
+		\item \textbf{M.Tech} in Electronics Design Technology, National Institute of Electronics \& Information Technology (NIELIT), Calicut, India, 2012 -- 2014
+		\item \textbf{B.Tech} in Electronics and Communication Engineering, School of Engineering, CUSAT, Cochin, India, 2005 -- 2009
+	\end{itemize}
+	
+	\section{Experience}
+	
+\subsection{Chevron Engine, Bengaluru, India} 
+\textbf{Senior Machine Learning Engineer} \\
+\hfill \textbf{July 2025 -- Present} 
+
+\begin{itemize}
+	
+	\item Developed production-grade computer vision solutions for industrial inspection, asset integrity, and worker safety applications in the oil \& gas sector.
+	
+	\item Advanced digital twin initiatives by integrating real-time sensor data with virtual asset models for condition monitoring, work planning, and faster troubleshooting.
+	
+	\item Evaluated and shortlisted computer vision vendors for EHS use cases through an RFP-style benchmark covering model accuracy (mAP/vmAP), latency, hazardous-area certifications (ATEX/IECEx), edge deployment, data privacy, and workflow integration.
+	
+	\item Led end-to-end AI solution development, including data ingestion, annotation strategy, model training, validation, deployment, inference, and human-in-the-loop review.
+	
+	\item Supported cloud-native MLOps practices including scalable model training, model registry, inference orchestration, data platform integration, and production monitoring.
+	
+	\item Improved model readiness through dataset audits, annotation quality reviews, class definition refinement, preprocessing recommendations, and validation gate design.
+	
+	\item Established annotation guidelines, quality review workflows, labeling standards, and SME validation processes to improve dataset consistency.
+	
+	\item Built high-resolution inspection imagery workflows involving image tiling, prediction stitching, confidence filtering, and structured output generation.
+	
+	\item Delivered safety-focused video analytics involving worker detection, activity recognition, PPE visibility, camera placement, occlusion handling, and data quality assessment.
+	
+	\item Authored technical documentation, architecture references, annotation handbooks, training material, and roadmap proposals while supporting knowledge transfer across teams.
+	
+	\item Collaborated with product owners, software engineers, data engineers, operations teams, inspectors, SMEs, and vendors to deliver deployable AI solutions and identify future computer vision opportunities.
+	
+\end{itemize}	
+	
+	
+\subsection{SONY, Bengaluru, India}
+\textbf{Lead AI/ML Engineer} \\
+\hfill \textbf{April 2025 -- June 2025} (3-month contract engagement)
+\begin{itemize}
+	\item Built secure \textbf{RAG pipelines} using AWS Bedrock and Claude with enterprise data from \textbf{SharePoint and Confluence} via MCP, enforcing citation tracking and zero internet leakage.
+	\item Integrated and tuned \textbf{Jira/Confluence MCP clients}, using AWS Secrets Manager for tokenized access and validated \texttt{--space/project} parameters.
+	\item Developed \textbf{LLM tools for task analysis} and automated risk scanners, streamlining deployments across Windows and AWS EC2 environments.
+\end{itemize}	
+	
+	
+
+\subsection{DIMAAG-AI, Bengaluru, Karnataka, India}
+\textbf{Senior Software Engineer AI/ML} \\
+\hfill \textbf{February 2023 -- February 2025} (2 years 1 month)
+\begin{itemize}
+	% --- Production-Ready Computer Vision & Deep Learning ---
+	\item Developed production-ready computer vision solutions for industrial and agricultural applications, leveraging \textbf{YOLOv8} for object detection and vision-LLM pipelines for advanced feature extraction.
+	\item Deployed deep learning techniques for real-time \textbf{action recognition} and video analytics, implementing models such as \textbf{SlowFast}.
+	\item Created methods for \textbf{Field of View (FOV)} validation to maintain camera alignment, combining feature matching, optical flow, and statistical comparisons.
+	\item Built AI pipelines for \textbf{object segmentation}, classification, and feature extraction using segmentation models (\textbf{Unet}, \textbf{DeepLabV3}, \textbf{PSPNet}).
+	\item Processed \textbf{3D point clouds} to generate segmentation masks, delivering accurate feature extraction for automation systems.
+	\item Applied \textbf{Random Forest}, \textbf{Gradient Boosting}, and \textbf{MLP} classifiers for robust, high-accuracy predictions across diverse datasets.
+	
+	% --- Data Quality, Augmentation, and Hyperparameter Tuning ---
+	\item Enhanced data quality and balance via \textbf{image clustering} and model evaluation techniques, followed by \textbf{data augmentation} and hyperparameter tuning to improve model performance.
+	\item Integrated \textbf{statistical analysis} and geometric transformations to optimize algorithmic precision for production environments.
+	
+	% --- LLM-Based Retrieval, NLP, and Agentic Workflows ---
+	\item Implemented \textbf{LLM-based retrieval systems} to extract structured information from PDFs using \textbf{Vector Databases} (FAISS, Pinecone) and \textbf{Retrieval-Augmented Generation (RAG)}.
+	\item Orchestrated \textbf{agentic workflows} via \textbf{LangChain} for dynamic query generation, structured output validation, and multi-step reasoning with LLMs.
+	\item Developed prototypes leveraging \textbf{Generative AI} for summarizing SOP documents and automating question-answering systems, ensuring secure role-based access to sensitive data.
+	
+	% --- MLOps & Azure Integration ---
+	\item Utilized \textbf{Azure AI services} (Azure Machine Learning, Cognitive Services) to streamline model training, deployment, and monitoring.
+	\item Deployed \textbf{MLOps} workflows using \textbf{MLflow} for experiment tracking, model versioning, and containerized deployment on \textbf{Azure}.
+	
+	% --- Collaboration & Mentorship ---
+	\item Drove end-to-end design, execution, and evaluation of AI model experiments, collaborating with cross-functional teams and mentoring junior engineers on deep learning best practices.
+\end{itemize}
+
+	
+\subsection{National Institute of Technology, Puducherry, India}
+\textbf{Senior Research Fellow} \\
+\hfill \textbf{July 2018 -- January 2023} (4 years 7 months)
+\begin{itemize}
+	\item Developed virtual sensing and predictive analytics solutions for multivariate time-series forecasting of water quality parameters using deep learning.
+	
+	\item Engineered and optimized deep learning models (LSTM, GRU, Bi-LSTM) for multivariate time-series forecasting, improving prediction accuracy for aquaculture management.
+	
+	\item Proposed and implemented hybrid CNN-LSTM and CNN-GRU architectures for real-time predictive modeling, balancing forecasting accuracy and computational efficiency.
+	
+	\item Researched hyperparameter optimization (learning rate, epochs, batch size) to maximize model performance, achieving significant reductions in computation time.
+	\item Applied \textbf{attention mechanisms} to deep learning models to enhance the accuracy of water quality predictions by focusing on the most relevant features in time-series data.
+	\item Published peer-reviewed journal papers on predictive modeling, virtual sensing, and deep learning for time-series forecasting.
+	\item Filed and was granted \textbf{patents} for new methods in virtual sensing and hybrid deep learning systems for aquaculture water quality monitoring.
+	\item Conducted real-world experiments on aquaculture datasets (e.g., ADAK and MAC datasets) to validate the accuracy of the developed models.
+	\item Designed and implemented an IoT-based low-cost water quality monitoring system, using sensors and cloud-based virtual sensing to provide real-time data for farmers.
+	\item Built and validated water quality estimation models based on low-cost sensor data, reducing dependency on expensive sensors while maintaining high accuracy in dissolved oxygen prediction.
+\end{itemize}
+	
+\subsection{Patents}
+\begin{enumerate}
+	\item {Rasheed Abdul Haq K. P. and Harigovindan V. P. }, \enquote{VIRTUAL SENSING SYSTEM FOR WATER QUALITY MONITORING AND METHOD THEREOF}, Indian Patent No.: 397595, Date of Grant: May 25, 2022.
+	\item {Rasheed Abdul Haq K. P. and Harigovindan V. P. }, \enquote{DEEP LEARNING BASED VIRTUAL SENSING METHOD AND SYSTEM FOR LOW-COST AQUACULTURE WATER QUALITY MONITORING}, Indian Patent No.: 552671, Date of Grant: October 21, 2024.	
+	\item {Rasheed Abdul Haq K. P. and Harigovindan V. P. }, \enquote{HYBRID DEEP LEARNING BASED METHOD AND SYSTEM FOR AQUACULTURE WATER QUALITY PREDICTION}, Indian Patent No.: 579506, Date of Grant: January 30, 2026.	
+	
+\end{enumerate}
+
+
+\subsection{Journals}
+\begin{enumerate}
+	\item Rasheed Abdul Haq K. P. and Harigovindan V. P. \enquote{Deep Learning Enhanced Virtual Sensing: A Cost-Effective Approach for Water Quality Monitoring in Aquaculture} \textit{IEEE Transactions on AgriFood Electronics}, June 2025.
+	\item Rasheed Abdul Haq K. P. and Harigovindan V. P., \enquote{Water Quality Prediction for Smart Aquaculture Using Hybrid Deep Learning Models}, \textit{IEEE Access}, vol. 10, pp. 60078-60098, June 2022. 
+	\item Rasheed Abdul Haq K. P. and Harigovindan V. P., \enquote{Water Quality Prediction System based on Adam Optimised LSTM Neural Network for Aquaculture: A Case Study in Kerala, India}, \textit{J. Inst. Eng. India Ser. B}, \textit{Springer}, 103, 2177--2188, October 2022.    
+	\item Rasheed Abdul Haq K. P. and Harigovindan V. P., \enquote{Accurate Dissolved Oxygen Prediction for Aquaculture Using Stacked Ensemble Machine Learning Model},  \textit{Natl. Acad. Sci. Lett.}, \textit{Springer}, 46, 203--207, January 2023. 
+\end{enumerate}
+
+\subsection{MEA Engineering College, Perinthalmanna, Kerala, India}
+\textbf{Assistant Professor, Department of ECE} \\
+\hfill \textbf{June 2015 -- July 2018} (3 years 1 month)
+
+\begin{itemize}
+
+\item Delivered undergraduate and postgraduate courses in Digital Signal Processing, Signals \& Systems, Digital System Design, Basics of Electronics Engineering, Electronic Circuits, and Communication Systems, while developing structured course materials aligned with the APJ Abdul Kalam Technological University (KTU) curriculum.
+
+\item Led the department's transition from the Calicut University syllabus to the KTU curriculum by preparing course files, lecture notes, assessment plans, question banks, laboratory manuals, and outcome-based evaluation documents.
+
+\item Served as Class Tutor for the 2014--2018 Electronics \& Communication Engineering batch, managing student mentoring, attendance analytics, academic performance tracking, parent interactions, and intervention plans for academically at-risk students.
+
+\item Coordinated B.Tech Mini Projects, B.Tech Seminars, and M.Tech Seminar activities by organizing student groups, assigning faculty mentors, scheduling evaluations, and consolidating academic assessments.
+
+\item Guided undergraduate engineering projects in embedded systems and wireless technologies while mentoring students in technical writing, project execution, and research presentation.
+
+\item Conducted laboratory sessions in Basic Electronics, Linear Integrated Circuits, and Communication Systems, and served as an External Laboratory Examiner for Electronics laboratories under the university examination system.
+
+\item Developed spreadsheet-based academic tracking systems for attendance, internal assessment, and departmental reporting, improving the efficiency and accuracy of academic administration.
+
+\end{itemize}
+
+\subsection{Way in Electronic Solutions, Calicut, India}
+\textbf{Founder \& Senior Embedded Software Engineer} \\
+\hfill \textbf{August 2014 -- June 2017 (Part-time while serving as Assistant Professor)} (3 years 10 months)
+
+\begin{itemize}
+\item Co-founded an embedded systems startup delivering custom industrial automation, smart parking, medical-device testing, and intelligent monitoring solutions from concept through deployment.
+\item Led end-to-end product development, including requirements analysis, system architecture, embedded firmware development, hardware integration, testing, technical documentation, deployment, and customer support.
+\item Designed and developed embedded products including the Intelligent Parking Guidance System (IPGS), Ultrasound Probe Test System, GSM-based Security System, Digital Signage solutions, and Animal Health Monitoring System (AHMS).
+\item Engineered Embedded C firmware for 8051-based systems and Raspberry Pi applications, integrating RS-485/UART communication, ultrasonic sensors, LED driver interfaces, and Linux-based embedded platforms.
+\item Built web-based monitoring and management applications using PHP, MySQL, JavaScript, HTML/CSS, and XAMPP for real-time visualization, remote monitoring, and data management.
+\item Authored high-level design documents (HLDs), coding standards, technical proposals, quotations, business plans, and customer presentations while supporting product planning and engineering best practices.
+\item Collaborated directly with customers, technology partners, and multidisciplinary teams to translate business requirements into deployable engineering solutions while contributing to startup operations, recruitment, and business development.
+\end{itemize}
+
+\subsection{M. N. Dastur \& Co. (P) Ltd., Bengaluru, India}
+\textbf{DSP Intern (Embedded Image Processing)} \\
+\hfill \textbf{September 2013 -- July 2014} (11 months)
+
+\begin{itemize}
+\item Engineered an Automatic Number Plate Recognition (ANPR) system for Indian vehicles using Computer Vision and Digital Image Processing as part of an M.Tech internship project targeting embedded DSP/ARM platforms.
+\item Designed and implemented the complete recognition pipeline covering license plate localization, character segmentation, Optical Character Recognition (OCR), and Support Vector Machine (SVM)-based classification using MATLAB, OpenCV, and C++.
+\item Implemented image preprocessing, Sobel edge detection, Otsu thresholding, morphological operations, contour analysis, histogram equalization, affine rotation correction, and feature extraction to improve recognition robustness.
+\item Ported and evaluated the OpenCV implementation on Ubuntu Linux running on the ARM-based BeagleBoard-xM platform, addressing embedded deployment and cross-compilation challenges.
+\item Authored core C++ modules, MATLAB algorithms, training utilities, technical documentation, and project reports while validating the solution through iterative prototype development and engineering reviews.
+\end{itemize}
+
+
+\subsection{Bharti Airtel Ltd., Kerala, India}
+\textbf{Network Surveillance Engineer} \\
+\hfill \textbf{January 2010 -- February 2012}  (2 years 2 months)
+
+\begin{itemize}
+\item Monitored nationwide telecom network health, service availability, alarms, and key performance indicators (KPIs) using Operations \& Maintenance Center (OMC-R) network management tools.
+\item Performed network fault detection, troubleshooting, root cause analysis, and performance optimization by coordinating with field engineers, vendors, and cross-functional operations teams to minimize service disruptions.
+\item Coordinated planned network outages, preventive maintenance activities, and vendor-recommended corrective actions while ensuring controlled execution with minimal customer impact.
+\item Provided remote technical support for fault investigation, managed alarm escalation processes, classified network outages, and ensured timely incident resolution in accordance with established escalation procedures.
+\item Analyzed network alarm trends and generated daily, weekly, and monthly operational reports to support performance monitoring, reliability improvements, and continuous network optimization.
+\end{itemize}
+
+\section{Pet AI Projects}
+\subsection{Arogyamitra — AI medical triage assistant for Telegram (Kerala, India)} \hfill \textbf{2025} \\
+\textit{LLM-driven chatbot that collects demographics and symptoms, triages risk, and recommends specialists.}
+\begin{itemize}
+	\item Delivered production-ready Telegram bot with structured multi-field demographic and symptom collection.
+	\item Implemented multi-provider LLM fallback and persistent rate-limit tracking for robust uptime.
+	\item Built precise doctor-matching with exclude-keyword logic to prevent misclassification.
+\end{itemize}
+\textit{Stack: Python, python-telegram-bot, Groq (LLM), OpenRouter/Gemini, HuggingFace, CSV (data), SQLite (planned), Railway (deployment)}
+\textit{Links: \href{https://github.com/rasheedhaq/arogy_bot}{GitHub} \;|\; \href{https://t.me/arogyamitr_bot}{Demo}}
+
+
+\section*{Skills}
+\begin{itemize}
+	\item \textbf{Programming Languages:} Python, C++, MATLAB
+	
+	\item \textbf{AI/ML Expertise:} Predictive Modeling, Time-Series Forecasting, Statistical Learning, Machine Learning, Deep Learning, Computer Vision, Digital Twins, NLP, Generative AI, LLMs, Retrieval-Augmented Generation (RAG), Agentic AI
+	
+	\item \textbf{Libraries/Frameworks:} PyTorch, TensorFlow, Keras, Scikit-Learn, YOLOv8, PyTorchVideo, Hugging Face Transformers, LangChain, NumPy, Pandas, Matplotlib, NLTK, spaCy
+	
+	\item \textbf{MLOps \& Cloud:} Azure ML, Azure AI Services, AWS Bedrock, MLflow, Git
+	
+	\item \textbf{Vector Databases \& Retrieval:} FAISS, Pinecone
+	
+	\item \textbf{Operating Systems:} Linux, Windows
+	
+	\item \textbf{Professional Skills:} Technical Leadership, Cross-functional Collaboration, Technical Mentoring, Stakeholder Communication, Technical Documentation
+\end{itemize}
+	
+\section*{References}
+Available upon request.
+	
+\end{document}

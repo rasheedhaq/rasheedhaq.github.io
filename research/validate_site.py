@@ -17,7 +17,7 @@ class Links(HTMLParser):
 
 
 errors = []
-pages = [ROOT.parent / 'index.html', ROOT.parent / 'index_ats.html', ROOT.parent / 'cv/index.html', *ROOT.glob('*.html')]
+pages = [ROOT.parent / 'index.html', ROOT.parent / 'index_ats.html', ROOT.parent / 'cv/index.html', *ROOT.glob('*.html'), *(ROOT.parent / 'lab').glob('*.html')]
 for page in pages:
     parser = Links()
     parser.feed(page.read_text(encoding='utf-8'))

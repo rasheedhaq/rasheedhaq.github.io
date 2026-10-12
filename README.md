@@ -3,6 +3,8 @@
 Professional portfolio, current CV, previous CV, and research archive.
 
 - [Portfolio](https://rasheedhaq.github.io/)
+- [AI & Research Lab](https://rasheedhaq.github.io/lab/)
+- [Lab publication review](docs/lab-publication-review.md)
 - [Latest CV — PDF](cv/latest/resume.pdf) · [LaTeX source](cv/latest/resume.tex)
 - [Previous CV — PDF](cv/previous/resume.pdf) · [LaTeX source](cv/previous/resume.tex)
 - [CV downloads and dates](cv/index.html)

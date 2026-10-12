@@ -1,4 +1,9 @@
 /* Justify prose while keeping labels, headings and short metadata readable. */
+.resume-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; width: 100%; margin: 8px 0 16px; }
+.resume-actions a { color: #f5f4f0; text-decoration: underline; text-underline-offset: 4px; font-size: 13px; }
+.resume-actions .resume-primary { background: #c8f135; color: #111; padding: 10px 16px; text-decoration: none; font-weight: 600; }
+.project-resources { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 20px 0; font-size: 13px; }
+.project-resources a { text-decoration: underline; text-underline-offset: 4px; }
 p:not(.date):not(.label):not(.subtitle):not(.contact-line):not(.exp-company),
 .intro-block, .summary-stat-detail, .output-body {
   text-align: justify;

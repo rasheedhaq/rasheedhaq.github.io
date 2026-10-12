@@ -89,9 +89,9 @@ a { color: inherit; text-decoration: none; }
 .cover-contact-item a { color: #c0bdb5; }
 .cover-contact-item a:hover { color: #c8f135; }
 .cover-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
   border-top: 1px solid #2a2a2a;
   padding-top: 16px;
 }
@@ -108,7 +108,7 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-/* Full image — no crop, full portrait visible */
+/* A compact portrait balances the introduction and credentials. */
 .cover-photo-wrap {
   display: flex;
   align-items: flex-start;
@@ -118,7 +118,9 @@ a { color: inherit; text-decoration: none; }
 .cover-photo {
   width: 100%;
   max-width: 220px;
-  height: auto;           /* full image — no cropping */
+  height: 360px;
+  object-fit: cover;
+  object-position: center 18%;
   display: block;
   border: 2px solid #2a2a2a;
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
@@ -381,7 +383,7 @@ section { margin-bottom: 60px; scroll-margin-top: 50px; }
 .research-links a:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
 @media print { .research-links { display:none; } }
 </style>
-<link rel="stylesheet" href="typography.css"></head>
+<link rel="stylesheet" href="typography.css?v=20261012-header"></head>
 <body>
 <!-- cv-downloads -->
 
@@ -393,8 +395,8 @@ section { margin-bottom: 60px; scroll-margin-top: 50px; }
       <p class="cover-name">Rasheed Abdul Haq<br>Kozhiparamban</p>
       <p class="cover-title">Senior Machine Learning Engineer &nbsp;·&nbsp; 14+ years in Industry &nbsp;·&nbsp; 8+ years across AI research and ML</p>
       <p class="cover-desc">Applied AI engineer with deep expertise in computer vision, time-series forecasting, virtual sensing, and LLM-based retrieval systems. Built production pipelines across industrial safety, enterprise knowledge systems, and IoT-based environmental intelligence — from cloud infrastructure to embedded edge deployments.</p>
+      <div class="resume-actions"><a class="resume-primary" href="cv/latest/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume &nearr;</a><a href="cv/latest/resume.pdf" download>Download PDF</a></div>
       <div class="cover-contacts">
-        <div class="resume-actions"><a class="resume-primary" href="cv/latest/resume.pdf" target="_blank" rel="noopener noreferrer">View latest resume (PDF)</a><a href="cv/latest/resume.pdf" download>Download PDF</a><a href="cv/index.html" target="_blank" rel="noopener noreferrer">Previous version &amp; dates</a></div>
         <span class="cover-contact-item">✉ <a href="mailto:rasheedabdulhaq@gmail.com">rasheedabdulhaq@gmail.com</a></span>
         <span class="cover-contact-item">🔗 <a href="https://linkedin.com/in/rasheedabdulhaq">linkedin.com/in/rasheedabdulhaq</a></span>
         <span class="cover-contact-item">⌥ <a href="https://github.com/rasheedhaq">github.com/rasheedhaq</a></span>

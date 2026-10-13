@@ -1,0 +1,66 @@
+\begin{frame}{Introduction}
+
+\textbf{Virtual sensing }
+\begin{itemize}	
+	\justifying
+	\item VS techniques, also called soft sensing, proxy sensing, inferential sensing, or surrogate sensing, are used to provide feasible and economical alternatives to costly or impractical physical measurement instrument.
+	\item This technique predicts parameters using mathematical models, which are not measured using physical sensors.
+	\item A VS system uses information available from other measurements and process parameters to calculate an estimate of the quantity of interest.
+	\item In this work, expensive DO sensor is replaced with solubility equations. 
+	\item Solubility equations used to estimate the DO: 
+	\begin{itemize}
+	\item The Weiss Equations \cite{WEISS1970}
+	\item The Benson and Krause Equations \cite{Benson1980,Benson1984}
+	\item The Garcia and Gordon Equations \cite{Garcia1992}
+	\end{itemize}
+\end{itemize}
+\end{frame}	
+
+%\input{1.Parts/Weiss_EQ.tex}
+
+\begin{frame}%[allowframebreaks]
+\frametitle{Node S} % and working}
+
+\begin{itemize}	
+	\justifying
+	\item	Implemented virtual sensing in Node S of WQM system.
+	\item 	Here costly DO sensors are replaced by virtual sensing.
+	\item  	Virtual sensing uses solubility equations and interdependency equations.  %(Weiss equation).
+	%	\item   We also virtual sense salinity using the values from conductivity sensor.
+\end{itemize}
+
+\begin{figure}[h!]
+	\includegraphics[trim={.1cm .1cm .1cm .1cm},clip,width=8cm]{Im/PPT/NodeS.pdf}
+	\centering
+	\caption{Block Diagram of Node S.}
+	\label{Fig:NodeS_Block}
+\end{figure}	
+\end{frame}
+
+%\begin{frame}{Working of Node S}%[allowframebreaks]
+%\begin{columns}
+%	
+%	\begin{column}{0.4\textwidth}
+%		\begin{figure}[]
+%			\includegraphics[trim={.1cm .1cm .1cm .1cm},clip,width=4.25cm]{Im/PPT/fig4.pdf}
+%			\centering
+%			\caption{Working of Node S.}
+%			\label{Fig:NodeS_working}
+%		\end{figure}
+%	\end{column}
+%	
+%	\begin{column}{0.7\textwidth}
+%		\begin{itemize}
+%			\justifying
+%			\item VS is implemented in the working of Node S.
+%			\item First, the reading from the physical sensors \\is taken.
+%			\item DO is estimated using the reading from physical \\ sensors. 
+%		\end{itemize}
+%	\end{column}
+%	
+%\end{columns}		
+%	
+%\end{frame}
+
+
+

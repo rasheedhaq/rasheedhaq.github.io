@@ -1,0 +1,9 @@
+{
+  "shared_documents": 60,
+  "distinct_source_downloads": 41,
+  "held_back_count": 273,
+  "errors": [],
+  "scope": "Selected patent specifications, claims, grant records and research drafts only. Full local work manifest is never exported.",
+  "uncertain_associations": "Topic/folder matches labelled uncertain; shared references are not exclusive patent specifications.",
+  "rights": "No blanket licence; access does not grant patent rights."
+}

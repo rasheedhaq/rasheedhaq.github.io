@@ -1,0 +1,1626 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>FORM 2 COMPLETE SPECIFICATION.pdf | Work & Research Archive</title><link rel="stylesheet" href="../style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><div class="wrap"><span class="eyebrow">Rasheed Abdul Haq Kozhiparamban / Open research</span><h1>FORM 2 COMPLETE SPECIFICATION.pdf</h1><nav><a href="../index.html">Home & search</a><a href="../index.html#patents">Patents</a><a href="../index.html#collection">Projects</a><a href="../release-audit.html">Audit</a></nav></div></header><main id="main" class="wrap"><p><a href="../index.html">&larr; Research collection</a></p><div class="meta"><p>FORM 2 COMPLETE SPECIFICATION.pdf</p><p>Archived research version / text-extracted</p><a class="button" href="../sources/a7664ac91c32cbdc2d87.pdf" target="_blank" rel="noopener">Read / download original</a></div><article><section class="pdf-page"><h2>Page 1</h2><div class="pdf-text">                 FORM 2
+
+                  THE PATENTS ACT, 1970
+                                    (39 of 1970)
+                      &amp;
+ 5                       The Patents Rules, 2003
+
+           COMPLETE SPECIFICATION
+                               (See section 10; rule 13)
+
+
+10
+      1. TITLE OF THE INVENTION
+
+    “HYBRID DEEP LEARNING BASED METHOD
+    AND SYSTEM FOR AQUACULTURE WATER
+           QUALITY PREDICTION”
+
+
+15
+
+      2. APPLICANT (S)
+
+                      NATIONAL  INSTITUTE  OF  TECHNOLOGY
+          (a)  NAME:
+                     PUDUCHERRY
+         (b)  NATIONALITY:  INDIAN INSTITUTE
+
+                       THIRUVETTAKUDY, KARAIKAL   -  609  609,
+          (c)  ADDRESS:
+                      PUDUCHERRY, INDIA
+
+
+
+20   3. PREAMBLE TO THE DESCRIPTION
+
+       The following specification particularly describes the invention and the manner
+         in which it is to be performed.
+
+
+
+
+
+                                               1</div></section><section class="pdf-page"><h2>Page 2</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+       HYBRID DEEP LEARNING BASED METHOD AND SYSTEM FOR
+
+           AQUACULTURE WATER QUALITY PREDICTION
+
+
+    FIELD OF THE INVENTION
+
+ 5   The present invention relates to the field of water quality management in aquaculture.
+
+      Particularly, the present invention relates to a method and system for predicting water
+
+      quality in aquaculture using deep learning techniques, specifically a hybrid model
+
+     combining convolutional neural networks (CNNs) with long short-term memory
+
+    (LSTM) or gated recurrent unit (GRU) networks. The invention  is intended to
+
+10   improve the efficiency and effectiveness of aquaculture operations by providing early
+
+     warning of potential water quality issues, enabling timely corrective action to be
+
+      taken.
+
+
+   BACKGROUND OF THE INVENTION
+
+15   Aquaculture is vital for global food security as the world population is projected to
+
+      reach 9.8 billion by 2050. Natural resources are at their limit and the ocean alone may
+
+      not suffice to meet the demand for food. Aquaculture is an efficient solution for food
+
+      production, yet its environmental impact needs to be assessed. It is estimated that by
+
+     2050, aquaculture will produce one-third of  all seafood. Sustainable aquaculture
+
+20    practices are being adopted to ensure the production of healthy and safe food while
+
+      preserving the environment. Aquaculture, the farming of aquatic organisms such as
+
+       fish, shellfish, and seaweed, is a growing industry that plays a vital role in meeting
+
+      the increasing global demand for seafood. However, the success of aquaculture
+
+      operations depends on many factors, including water quality. Poor water quality can
+
+25    lead to reduced growth and survival rates of the cultured species, as well as increased
+
+      susceptibility to diseases. Aquaculture is considered as an integral component for
+
+      global food security as the world population is expected to reach 9.8 billion by 2050.
+
+     The harvest from natural resources is mostly beyond their biological limits, and the
+
+     ocean alone may not meet the demand for food required for this growing population.
+
+
+                                          2</div></section><section class="pdf-page"><h2>Page 3</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     Aquaculture is one of the efficient solutions for food production but not without
+
+     impacting the environment. Aquaculture involves inefficient energy use, large carbon
+
+      footprint and waste of water resources. To minimize the impact on the environment
+
+     and optimize the use of resources, Water quality prediction (WQP) plays an important
+
+ 5    role.
+
+
+      Usually, the farmer assesses the farm by continuous manual monitoring, which will
+
+      not provide all the required information. This traditional method is tedious, time-
+
+     consuming, and incapable of meeting the requirements. They can take action only
+
+10   when the farmer has discovered a visible change in the condition of the fish or
+
+      environment. By this time, environmental factors have already changed dramatically.
+
+     The procedure to bring the farming environment back to normal is expensive once the
+
+     damage is done. There are also other traditional methods of water quality monitoring
+
+     where the water samples are collected and sent to a lab. This method consumes time,
+
+15   and they delay the decision-making process affecting productivity. But the same is
+
+     done by using sensors that monitor the physical environment continuously and
+
+      provide us with extensive data which may include all the factors which farmer cannot
+
+      assess manually. This may help us to control the system and reduce the impact on the
+
+      environment. WQM may also help us with enhancing the quality of the environment,
+
+20   improving product quality, and increasing production. Thus, monitoring of the fish
+
+     farm optimizes the use of resources improving sustainability and may help the farmer
+
+     make a better profit.
+
+
+     The vital water quality parameters in aquaculture are temperature, dissolved oxygen
+
+25   (DO), nitrate, ammonia, turbidity, salinity, pH level and alkalinity. The requirement
+
+      varies for different species, and farmers need to be aware of them. The fluctuation in
+
+      these parameters may result in massive production loss. Several reasons are there for
+
+      contamination of water. Even seawater may be polluted due to urbanization and
+
+       industrialization. Dissolved Oxygen (DO)  is one  of  the  critical water  quality
+
+
+                                          3</div></section><section class="pdf-page"><h2>Page 4</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      parameters, which reflects changes in water quality in aquaculture. The water quality
+
+      of an aquaculture pond has a direct impact on the growth of aquatic animals and
+
+      product quality. These parameters directly affect fish health and feed utilization
+
+      affecting the growth rate. Fish experience stress and diseases breakout when the
+
+ 5   temperature is chronically near their maximum tolerance or fluctuates suddenly.
+
+
+     The water quality management of farmers  is based on assumption and  is done
+
+      periodically without any assessment. In some cases, they will replace the water once
+
+      every three days without considering the requirements and the source may be even
+
+10   more polluted. Some others may use different chemicals periodically. All these
+
+      practices without proper water quality monitoring will lead to mismanagement and
+
+      pollution of natural resources. The farmers are never using any monitoring techniques
+
+      for water quality. A few of them are periodically using different manual testing kits to
+
+     check water parameters. Others are even evaluating fish behaviour, which creates
+
+15    stress and  affects growth. One segment  of  traditional farmers  is unaware  of
+
+     technology and not affordable for many who are aware. The majority production in
+
+      aquaculture comes from small farms and helping them to be sustainable and efficient
+
+      farmers will have a considerable impact on the overall production output and reduce
+
+      the impact of aquaculture on the environment.
+
+20
+
+    To maintain and manage aquaculture, water quality monitoring and water quality
+
+      prediction (WQP) are essential. In aquaculture, water quality is the most influential
+
+     and critical factor that affects production as well as product quality. The vital water
+
+      quality parameters in aquaculture are  salinity, pH, dissolved oxygen (DO), and
+
+25    temperature. Water quality is affected by many factors, such as fish density, quality
+
+      of the feed, feeding interval, climate, and more. The change in water quality will
+
+      upset the balance of the system with algae bloom, bacterial growth, etc. This can lead
+
+      to severe problems, such as trigger  stress, lack of food intake, vulnerability to
+
+      diseases, and increased mortality rate of fish. Hence, if the trend in water quality
+
+
+                                          4</div></section><section class="pdf-page"><h2>Page 5</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     changes is forecasted, safeguards can be employed in advance to avoid imbalances in
+
+      the ecosystem and ensure suitable conditions for optimum growth of the  fish.
+
+      Therefore, accurate WQP can drastically improve productivity to make aquaculture
+
+     more profitable and sustainable.
+
+ 5
+
+     Aquaculture water quality  is affected by meteorological conditions and complex
+
+      interdependency relations between different water quality parameters. Hence the
+
+     change of water quality parameters exhibits non-linear characteristics, which results
+
+      in low prediction accuracy. The time-series data shows periodic variations depending
+
+10   on the seasons and climatic conditions. Time series data is used for analysis and
+
+      prediction  in  various  fields such  as  the  stock  market,  medical  field,  energy
+
+     consumption, weather forecasting, solar radiation etc. The major approaches for WQP
+
+      include classical prediction mechanisms such as the autoregressive moving average
+
+     model (ARMA),  autoregressive  integrated moving average (ARIMA),  seasonal
+
+15    autoregressive integrated moving average model (SARIMA), seasonal autoregressive
+
+      integrated moving  average with exogenous  factors (SARIMAX),  Holt-Winters
+
+      exponential smoothing (HWES), Markov model, Grey model, and support vector
+
+      regression (SVR) etc. However, these models are least suitable for aquaculture WQP
+
+     because they assume a linear relationship with water quality parameter data. These
+
+20   models are less accurate and take a long prediction time, making them unsuitable for
+
+      predicting the non-linear aquaculture water quality parameters.
+
+
+     Deep learning (DL) models like long short-term memory (LSTM), gated recurrent
+
+      unit (GRU), and convolutional neural network (CNN) have the flexibility in capturing
+
+25    the non-linear nature of the aquaculture WQP. These DL models have overcome the
+
+      limitations of Recurrent neural networks (RNNs) and achieved great success in
+
+      various applications. Recent advancements in artificial intelligence have made DL
+
+     one of the most proficient methods, and DL is popularly applied in different fields
+
+     such as image processing, speech recognition, text prediction, etc. DL makes time
+
+
+                                          5</div></section><section class="pdf-page"><h2>Page 6</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      series prediction more precise and efficient in terms of training time and required
+
+      processing power. In addition, DL models consider the non-linear characteristics of
+
+      water quality changes. LSTM is the widely used DL method for WQP due to its
+
+     remarkable performance in time series prediction.
+
+ 5
+
+    LSTM and GRU models are not very capable of maintaining long-term memory for
+
+     time series prediction, especially for long sequences. In time series forecasting, the
+
+      prediction value at the current time step is impacted mainly by past observations. In
+
+     some cases, the ones with a significant influence might have appeared at the time step
+
+10   long back from the current one. Hence neural networks must have the prolonged
+
+    memory holding capacity to hold memory for the learned long-term dependencies.
+
+     The ability of LSTM models to capture long-term dependencies information from
+
+       historical  observations  is  still considered a  critical performance  bottleneck,  as
+
+      indicated in recent studies. The work has theoretically proven that standard LSTM
+
+15   does not have long memory from a statistical perspective. Hence, building a time-
+
+      series prediction model capable of capturing and remembering complex dependencies
+
+       is a crucial problem that needs to be addressed.
+
+
+     The hybrid CNN-LSTM models also work similarly, helping the LSTM model
+
+20    capture the relevant data. In hybrid models, CNN with maxpooling is used to reduce
+
+      the length of the input sequence, which is fed into the LSTM and GRU models. The
+
+      hybrid models are not affected by exponential decay, as the CNN with maxpooling
+
+      will input the key features and helps LSTM in forecasting with better accuracy. Thus,
+
+      the hybrid models can achieve higher accuracy in prediction. Hybrid models aim to
+
+25    build neither overfit nor underfit models with strong generalization ability and require
+
+       less training time for fitting the models. The convolutional layer with maxpooling
+
+     enhances the capacity of the LSTM and GRU models to learn and store the critical
+
+      features in the non-linear water quality parameters. Thus, convolution layer with
+
+
+
+
+                                          6</div></section><section class="pdf-page"><h2>Page 7</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     maxpooling reduces LSTM and GRU’s exponential decay, bypassing  selective
+
+      information to the LSTM/GRU layer using convolution and maxpooling.
+
+
+   CNN and  its hybrid variations are used in many research work for time series
+
+ 5    prediction. DL models have been extensively used in many fields of time series
+
+      prediction,  including  finance  (stock  price,  cryptocurrency, and  precious  metal
+
+      prediction). The authors have used the CNN-LSTM model for gold price prediction.
+
+     They have proposed two simple hybrid models and compared the results with other
+
+    DL models. The authors also compared LSTM models with the hybrid models and
+
+10   observed that hybrid models perform better. In to predict blood glucose (BG) levels,
+
+      authors have used multiple layers of CNN along with LSTM. This hybrid model has
+
+     shown superior performance in BG prediction. In another work, the authors have used
+
+    Bi-LSTM with CNN for air quality prediction. They have done an extensive study
+
+     with two datasets and shown results proving the model’s capability for accurate air
+
+15    quality prediction. There have been multiple works based on hybrid DL models for
+
+      the prediction of air quality (PM2.5) based on CNN and LSTM models.
+
+
+     Water quality prediction (WQP) and Water quality prediction (WQP) are important
+
+      aspects of aquaculture, as it ensures the health and safety of aquatic organisms. It is
+
+20    essential to track water properties such as temperature, pH, dissolved oxygen (DO),
+
+       salinity and turbidity to detect changes in water quality. Therefore, it is important to
+
+     monitor and manage  water  quality  in  aquaculture systems  to  ensure  optimal
+
+      conditions for the cultured organisms.
+
+
+25    Traditionally, water quality in aquaculture systems has been monitored using various
+
+      sensors  and  instruments,  such  as pH  meters,  dissolved oxygen  meters,  and
+
+      temperature sensors. These instruments can provide real-time data on various water
+
+      quality parameters, such as pH, dissolved oxygen, temperature, salinity, and nutrients.
+
+     However, these measurements are often taken at fixed intervals and do not provide a
+
+
+                                          7</div></section><section class="pdf-page"><h2>Page 8</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     comprehensive picture of water quality over time. Furthermore, interpreting and
+
+      analyzing the data collected from these sensors can be challenging, as  it requires
+
+      expertise in both aquaculture and water quality management.
+
+
+ 5    In recent years, there has been increasing interest in using deep learning techniques to
+
+     improve the monitoring and management of water quality in aquaculture systems.
+
+     Deep learning is a type of machine learning that involves training artificial neural
+
+     networks on large datasets to learn patterns and make predictions. Convolutional
+
+      neural networks (CNNs) are a type of deep learning model that are particularly well-
+
+10    suited for image analysis tasks, such as classifying and detecting objects in images.
+
+     Long short-term memory (LSTM) and gated recurrent unit (GRU) networks are types
+
+      of deep learning models that are specifically designed for processing sequential data,
+
+     such as time series data.
+
+
+15   The combination of CNNs and LSTM/GRU networks, referred to as a hybrid model,
+
+      has been shown to be effective for various prediction tasks, including water quality
+
+      prediction. In a hybrid model, the CNN is used to extract features from the data,
+
+     while the LSTM/GRU network is used to analyze the extracted features over time to
+
+     make predictions.
+
+20
+
+    CN110334845A discusses cultivation of steamed crab and GRU based dissolved
+
+     oxygen long-time prediction method. Here GRU is used for predicting dissolved
+
+     oxygen. The accuracy and computational efficiency are less, as this work uses only
+
+   GRU and it’s difficult for GRU to fetch the nonlinear characteristics of water quality.
+
+25
+
+    CN114881303A discusses water  quality long-term  prediction method based on
+
+     double attention mechanism which helps in improving the accuracy of the water
+
+      quality prediction. In this work the important features are extracted using the attention
+
+     mechanism helps in improving the accuracy of water quality prediction. But the
+
+
+                                          8</div></section><section class="pdf-page"><h2>Page 9</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      attention based models require extra computation power when compared with the
+
+   CNN based hybrid deep learning models. This eliminates the scope of implementing
+
+       this model in any edge device and the water quality prediction system either requires
+
+     power hungry workstations or must depend on the cloud which attracts subscription
+
+ 5   charges making the system expensive in terms of energy and cost.
+
+
+    NPL titled “Prediction of Water Level and Water Quality Using a CNN-LSTM
+
+     Combined Deep Learning Approach” discusses a CNN model used for predicting the
+
+      water  level and LSTM model  is used  for  predicting  different  water  quality
+
+10    parameters. Two different models are used for predicting the water level and the
+
+      water quality, which is totally different from using hybrid models combining their
+
+     performance for water quality prediction. The CNN model is used to predict the water
+
+       level, and the non-linear water quality parameter is predicted using LSTM model. But
+
+       this doesn’t help to reduce computational efficiency or improve the accuracy of water
+
+15    quality  prediction.  In  this work  water  quality  including  total  nitrogen,  total
+
+     phosphorous, and total organic carbon along with water level is predicted.
+
+
+    NPL titled “A Long-Term Water Quality Prediction Method Based on the Temporal
+
+      Convolutional Network in Smart Mariculture” discusses the water quality prediction
+
+20   method based on TCN (temporal convolutional network), and predicts dissolved
+
+     oxygen, water temperature, and pH. Long-term prediction method based on TCN has
+
+      higher accuracy and less time complexity, compared with RNN (recurrent neural
+
+      network), SRU (simple recurrent unit), BI-SRU (bi-directional simple recurrent unit)
+
+     and LSTM (long short-term memory). These two models are not compared directly,
+
+25    but both are compared to basic models and have superior performance compared to
+
+       that. The TCN prediction network extract time series features and in-depth data
+
+      features by introducing dilated causal convolution and has a good effect of long-term
+
+      prediction.
+
+
+
+
+                                          9</div></section><section class="pdf-page"><h2>Page 10</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+    NPL titled “Short-term water quality variable prediction using a hybrid CNN–LSTM
+
+     deep learning model” discusses the development of two standalone deep learning
+
+     models, long short-term memory (LSTM) and convolutional neural network (CNN),
+
+     and a hybrid CNN–LSTM model to predict two water quality variables (dissolved
+
+ 5   oxygen (DO) and chlorophyll-a (Chl-a)) in the Small Prespa Lake in Greece. In this
+
+     work they only have developed hybrid CNN-LSTM model and are compared with
+
+     two  traditional machine  learning models,  support-vector  regression (SVR) and
+
+      decision tree (DT). This hybrid CNN-LSTM model have similar and computationally
+
+       efficient, but the CNN-GRU model is further efficient when compared to the CNN-
+
+10  LSTM model.
+
+
+     The difference between the two models is the application of GRU in the second layer,
+
+      in this work we only use the LSTM as second layer, whereas in the proposed model
+
+     both LSTM and GRU are used, and it helps in improving its performance. However,
+
+15    the success of marine aquaculture operations depends on many factors, including
+
+      water quality.
+
+
+     The prior arts discussed herein don’t have hybrid CNN-LSTM/GRU model rather
+
+      using the normal deep learning models. Hence, there is a need to overcome the
+
+20   above-mentioned problem and there is a need for a system to monitor and manage
+
+      water quality in marine aquaculture systems, providing early warning of potential
+
+      water quality issues and taking timely corrective action.
+
+
+    OBJECTS OF THE INVENTION
+
+25   The primary object of the present invention is to provide a method and system for
+
+      predicting water quality in aquaculture systems that  is based on deep learning
+
+      techniques, specifically a hybrid model combining convolutional neural networks
+
+     (CNNs) with long short-term memory (LSTM) or gated recurrent  unit (GRU)
+
+      networks.
+
+
+                                         10</div></section><section class="pdf-page"><h2>Page 11</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     Another object of the present invention  is to provide a method and system for
+
+      predicting water quality in aquaculture systems that is able to analyze data from
+
+      various sensors and instruments in real-time and uses this data to make predictions
+
+     about the water quality in the aquaculture system.
+
+ 5
+
+     Yet another object of the present invention is to provide a method and system for
+
+      predicting water quality in aquaculture systems that is user-friendly and can be easily
+
+      integrated into existing aquaculture management systems.
+
+
+10   Yet another object of the present invention is to provide a method and system for
+
+      predicting water quality in aquaculture systems that is able to provide early warning
+
+      of potential water quality issues, enabling timely corrective action to be taken.
+
+
+     Yet another  object of  the  present invention  is  to improve  the  efficiency and
+
+15    effectiveness of aquaculture operations by providing a method and system  for
+
+      predicting water quality in aquaculture systems.
+
+
+     Yet another object of the present invention is to reduce the risk of water quality issues
+
+      in aquaculture systems.
+
+20
+
+   SUMMARY OF THE INVENTION
+
+    One or more of the problems of the conventional prior art are overcome by various
+
+     embodiments of the present invention.
+
+
+25  A system for predicting the water quality in aquaculture systems using a hybrid
+
+     model that combines convolutional neural networks (CNNs) with long short-term
+
+    memory (LSTM) or gated recurrent unit (GRU) networks. The system is designed to
+
+      analyze data from various sensors and instruments in real-time and uses this data to
+
+     make predictions about the water quality in the aquaculture system.
+
+
+                                         11</div></section><section class="pdf-page"><h2>Page 12</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+
+     The goal of the system is to improve the efficiency and effectiveness of aquaculture
+
+      operations by providing early warning of potential water quality issues, enabling
+
+      timely corrective action to be taken. The system is intended to be user-friendly and
+
+ 5   can be easily integrated into existing aquaculture management systems. The system
+
+     can be used in various types of aquaculture systems, including but not limited to
+
+      marine, freshwater, and brackish water systems.
+
+
+        It is primary aspect of the present invention to provide a water quality prediction
+
+10   (WQP) system using deep learning techniques, comprising:
+
+           one or more nodal units comprises of two or more sensor nodes S, and a
+
+              central node C; and
+
+            a water medium,
+
+                  wherein the central node C is connected to N number of sensor nodes
+
+15                   S, each sensor node S comprises of a transceiver, a microcontroller
+
+                      unit and an antenna with two or more sensors, the central node C
+
+                   comprises of a transceiver, a microcontroller unit, a display unit, a
+
+                   Global System for Mobile Communications (GSM) modem, an user
+
+                     device, a server and an antenna,
+
+20                wherein the sensor node S is deployed in the water medium to acquire
+
+                   water  quality  parameters,  and  the  estimation  of  water  quality
+
+                   parameter values and environmental parameter values is calculated
+
+                  and  the  sensed  signal  is  converted  to  respective  water  quality
+
+                    parameters, the microcontroller of the central node C is provided for
+
+25                   controlling and receiving data from the sensor node S, and the value
+
+                    of water quality parameter acquired electrical signals by the physical
+
+                     sensors, and wherein the microcontrollers of the nodal units at the
+
+                    sensor node S is embedded with instructions.
+
+
+
+
+                                         12</div></section><section class="pdf-page"><h2>Page 13</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+        It  is  another  aspect  of  the  present  invention,  wherein  the  sensors  acquire
+
+     environmental parameters such as temperature, pH, salinity, dissolved oxygen and the
+
+       like.
+
+
+ 5     It is another aspect of the present invention, wherein the water quality parameters
+
+     comprise of dissolved oxygen, salinity and the like.
+
+
+        It is another aspect of the present invention, wherein the microcontroller unit of the
+
+     nodal units comprises of a memory module and an input/output module.
+
+10
+
+        It  is another aspect of the present  invention, wherein  the memory module  is
+
+      configured to store the water quality parameters and the input/output module  is
+
+     connected to the sensors configured to receive the sensing signals.
+
+
+15     It is another aspect of the present invention, wherein the water quality parameters are
+
+      sent to the central node C from the sensor node S using the transceiver and the
+
+      antenna, received at the central node C and stored in a memory and the central node C
+
+     communicates the information and uploads the water quality parameters to the server.
+
+
+20     It is another aspect of the present invention, wherein the server is a cloud server.
+
+
+        It is another aspect of the present invention, wherein the microcontroller is configured
+
+      to use the GSM modem to send water quality parameters information to the user
+
+      device by the cloud server if online and by the GSM modem if offline.
+
+25
+
+        It is another aspect of the present invention, wherein the user device comprises of one
+
+      or more laptops, mobile, smart devices or any other device.
+
+
+
+
+
+                                         13</div></section><section class="pdf-page"><h2>Page 14</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+        It is another aspect of the present invention to provide a method of working of the
+
+      water quality prediction (WQP), comprising:
+
+               initialization of the sensors for water quality parameters in the water medium
+
+           and output the sensed signal;
+
+ 5           reading  the  sensors  and  storing  the  values  in  the memory  by  the
+
+             microcontroller;
+
+             processing the raw data from each sensor and converts to the water quality
+
+            parameters values in the microcontroller;
+
+             estimation of water quality parameters;
+
+10          sending data to the central node C;
+
+             waiting for predefined time;
+
+             receiving data from the sensor node S;
+
+              storing the data in the memory;
+
+             analyzation of the data;
+
+15          checking whether the parameters are in normal range;
+
+                  wherein  if the parameters are in normal range, the information  is
+
+                 communicated to the user and the data is displayed to the user device
+
+                 by the display unit,
+
+                  wherein if the parameters are in abnormal range, the information is
+
+20               communicated to the user by an alarm unit,
+
+             waiting for predefined time;
+
+                  wherein the operations  is to determine to alarm the user or pass
+
+                    information in a defined time interval, and
+
+             displaying the water quality parameters values to the user device by the
+
+25           display unit,
+
+                  wherein the process is repeated continuously passing the information
+
+                      to the end-user and uploading the data to the cloud server.
+
+
+
+
+
+                                         14</div></section><section class="pdf-page"><h2>Page 15</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+    BRIEF DESCRIPTION OF THE DRAWINGS
+
+     The manner in which the features, advantages and objects of the invention, as well as
+
+      others which  will become apparent, may be understood  in more  detail, more
+
+      particular description of the invention briefly summarized above may be had by
+
+ 5    reference to the embodiment thereof which is illustrated in the appended drawings,
+
+     which form a part of this specification. It is to be noted, however, that the drawings
+
+       illustrate only a preferred embodiment of the invention and is therefore not to be
+
+      considered limiting of the invention's scope as it may admit to other equally effective
+
+     embodiments.
+
+10    Fig. 1 illustrates a block diagram of the system for water quality prediction (WQP)
+
+     with central node and ‘N’ number of sensor nodes according to one embodiment of
+
+      the present invention.
+
+      Fig. 2 illustrates the block diagram of the sensor node of water quality prediction
+
+    (WQP) according to another embodiment of the present invention.
+
+15    Fig. 3 illustrates the block diagram of the central node of the system for water quality
+
+      prediction (WQP) according to another embodiment of the present invention.
+
+      Fig. 4 illustrates the flow chart including the method of sensor initialization, data
+
+      collection, estimation of parameters from physical sensors and communicates the
+
+     same with the Node C in accordance with an embodiment of the present invention.
+
+20    Fig. 5 illustrates the flow chart of method of receiving the sensed data at Node C,
+
+      storing data, uploading data to cloud, analyzing data, and prediction of future values
+
+      using deep  learning  hybrid CNN-LSTM/GRU  model,  in  accordance  with  an
+
+     embodiment of the present invention.
+
+
+
+
+
+                                         15</div></section><section class="pdf-page"><h2>Page 16</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+    DESCRIPTION FOR DRAWINGS WITH REFERENCE NUMERALS:
+
+       1. Water quality prediction system (100)
+
+       2. Water medium (110)
+
+       3. Central node C (120)
+
+ 5    4. Sensor nodes S (130a…….130n)
+
+       5. Microcontroller unit (210, 310)
+
+       6. Transceiver (220, 320)
+
+       7. Antenna (230, 330)
+
+       8. Sensors (240a, 240b, 240c, 240d)
+
+10    9. Display unit (340)
+
+      10. Global System for Mobile Communications (GSM) modem (350)
+
+      11. User device (360)
+
+      12. Server (370)
+
+
+
+
+
+                                         16</div></section><section class="pdf-page"><h2>Page 17</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+    DETAILED DESCRIPTION OF THE INVENTION
+
+        It is to be understood that the present disclosure is not limited in its application to the
+
+       details of construction and the arrangement of components set forth in the following
+
+      description or illustrated in the drawings. This particular form is only an exemplary
+
+ 5   embodiment and is not intended to be taken restrictively to imply any limitation on
+
+      the scope of the present invention. The present disclosure  is capable of other
+
+     embodiments and of being practiced or of being carried out in various ways. Also, it
+
+       is to be understood that the phraseology and terminology used herein is for the
+
+     purpose of description and should not be regarded as limiting.
+
+10
+
+     The present invention relates to the field of water quality management in aquaculture.
+
+      Particularly, the present invention relates to a method and system for predicting water
+
+      quality in aquaculture using deep learning techniques, specifically a hybrid model
+
+     combining convolutional neural networks (CNNs) with long short-term memory
+
+15   (LSTM) or gated recurrent unit (GRU) networks. The invention  is intended to
+
+     improve the efficiency and effectiveness of aquaculture operations by providing early
+
+     warning of potential water quality issues, enabling timely corrective action to be
+
+      taken. This technology can be used in various types of aquaculture systems, including
+
+      but not limited to marine, freshwater, and brackish water systems.
+
+20
+
+     The present invention relates to a method and system for predicting water quality in
+
+      aquaculture using a hybrid deep learning approach. Aquaculture, also known as fish
+
+      farming, is the cultivation of aquatic animals and plants in controlled environments,
+
+     such as ponds, tanks, and raceways. Water quality is a critical factor in the success of
+
+25    aquaculture operations, as it affects the growth and health of the cultured organisms.
+
+     Poor water quality can lead to diseases and mortality, which can result in significant
+
+     economic losses for aquaculture farmers.
+
+
+
+
+
+                                         17</div></section><section class="pdf-page"><h2>Page 18</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     The proposed method involves the use of a hybrid deep learning model, which
+
+     combines a convolutional neural network (CNN) with a long short-term memory
+
+    (LSTM) or gated recurrent unit (GRU) network. CNN is a type of neural network that
+
+       is particularly well-suited for processing data with a grid-like structure, such as
+
+ 5   images. The LSTM and GRU are types of recurrent neural networks (RNNs) that are
+
+     designed to process sequential data, such as time series.
+
+
+    To build the hybrid deep learning model, data from various sensors installed in the
+
+      aquaculture system is collected and processed. The data includes historical water
+
+10    quality data and corresponding environmental parameters, such as temperature, pH,
+
+       salinity and dissolved oxygen. This data is used to train and optimize the hybrid deep
+
+      learning model.
+
+
+     Once trained, the hybrid deep learning model can be used to predict water quality
+
+15    indicators, such as temperature, pH, salinity, and dissolved oxygen. These predictions
+
+      are made using data from the sensors installed in the aquaculture system and can be
+
+     used to make timely interventions and decision making in the management of the
+
+      system.
+
+
+20   The proposed method and system demonstrate improved accuracy and robustness in
+
+      water quality prediction compared to traditional machine learning approaches. This is
+
+     because the hybrid deep learning model can effectively analyze and extract relevant
+
+      features from the data, allowing for more accurate predictions. Additionally, the
+
+      hybrid approach allows for the integration of both spatial and temporal information,
+
+25   which is crucial for water quality prediction in aquaculture systems.
+
+
+     The microcontroller converts these sensed electrical signals to corresponding water
+
+      quality parameters. The memory module stores a plurality of sensor values to the
+
+      respective water quality parameters. After estimating all the parameters, the data is
+
+
+                                         18</div></section><section class="pdf-page"><h2>Page 19</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      sent to the central node by the microcontroller. The central node collects this data
+
+      stores them in the database, pass this information to the user in defined intervals. The
+
+      central node also determines whether the parameters are in abnormal ranges and
+
+      issues warning signal according to the determined result.
+
+ 5
+
+     The water  quality  prediction system  for  aquaculture  consists  of Node C  for
+
+      controlling and receiving the data from many Node S, which have the sensors for
+
+      sensing water quality parameters. All the water quality data is stored in cloud and
+
+      using CNN-LSTM/GRU deep learning model future values of water quality  is
+
+10    predicted using cloud/edge computing in the Node C. The water quality prediction
+
+     system includes a set of sensors and a microcontroller system. The sensors are used to
+
+      sense the water quality parameters and output a set of sensing signals that correspond
+
+      to the water quality parameters.
+
+
+15   The microcontroller system includes a memory module, and an input/output module.
+
+     The memory module is used to store the water quality parameters. The input/output
+
+     module connected  to  the sensors  is used  to  receive  the sensing  signals. The
+
+      microcontroller converts all sensed signal to respective water quality parameters. The
+
+      water quality parameters are sent to Node C from Node S using the transceiver and
+
+20    antenna, received at Node C and stored in its memory. Further data analysis and
+
+      water quality prediction (WQP)  is done at Node C. Node C communicates the
+
+      information and uploads the water quality parameters to the cloud.
+
+
+      Fig. 1 illustrates a water quality prediction (WQP) system (100) with Node C (120)
+
+25   and ‘N’ number of Node S. The Node S (130) may be deployed around the Node C
+
+      (120) and may choose any mode of communication with the Node C. Multiple Node
+
+    S (130) is deployed in the waterbody (110) to acquire water quality parameters from
+
+      different areas of the water body. The aquaculture water quality prediction system
+
+      (100) consists of a Node C (120) as center point and a set of Node S(130a-n) for
+
+
+                                         19</div></section><section class="pdf-page"><h2>Page 20</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      sensing water quality parameters and reporting back to Node C. WQP is implemented
+
+      in the cloud and accessed via Node C, where DL is used to predict water quality using
+
+      the data monitored using the WQP system (100).
+
+
+ 5   The system (100) for WQP, comprises one or more nodal units comprises of two or
+
+     more sensor nodes S (130), and a central node C (120), and a water medium (110).
+
+     The central node C (120) is connected to N number of sensor nodes S (130). Each
+
+      sensor node S (130a............130n) comprises of a transceiver (220), a microcontroller
+
+      unit (210) and an antenna (230) with two or more sensors (240a, 240b, 240c, 240d).
+
+10
+
+     The central node C (120) comprises of a transceiver (320), a microcontroller unit
+
+      (310), a display unit (340), a Global System for Mobile Communications (GSM)
+
+    modem (350), a user device (360), a server (370) and an antenna (330). The sensor
+
+     node S (130)  is deployed in the water medium (110) to acquire water quality
+
+15   parameters (240a, 240b, 240c, 240d), and the estimation of water quality parameter
+
+      values (240d, 240e) and environmental parameter values is calculated, and the sensed
+
+      signal  is converted to respective water quality parameters (240d, 240e) by the
+
+      microcontroller (210) of the sensor node S (130).
+
+
+20    In an embodiment, the microcontroller (310) of the central node C (120) is provided
+
+      for controlling and receiving data from the sensor node S (130), and the value of
+
+      water quality parameter values is sensed from acquired electrical signals by the
+
+      physical sensors (240a, 240b, 240c, 240d). The microcontrollers (210, 310) of the
+
+     nodal units (130, 120) at the sensor node S is embedded with instructions. The
+
+25    sensors acquire environmental parameters such as temperature (240a), pH (240b),
+
+       salinity (240c), dissolved oxygen (240d) and the like.
+
+
+      In an embodiment, the microcontroller unit (210, 310) of the nodal units (130, 120)
+
+     comprises of a memory module and an input/output module. The memory module is
+
+
+                                         20</div></section><section class="pdf-page"><h2>Page 21</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      configured to store the water quality parameters (240a, 240b, 240c, 240d), the
+
+      input/output module is connected to the sensors (240a, 240b, 240c, 240d) configured
+
+      to receive the sensing signals, using physical sensors. The water quality parameters
+
+      (240a, 240b, 240c, 240d) are sent to the central node C (120) from the sensor node S
+
+ 5   (130) using the transceiver (220, 320) and the antenna (230, 330), received at the
+
+      central node C (120) and stored  in a memory and the  central node C (120)
+
+     communicates the information and uploads the water quality parameters (240a, 240b,
+
+      240c, 240d) to the server (310). The server (310) is a cloud server.
+
+
+10   The microcontroller is configured to use the GSM modem (350) to send water quality
+
+      parameters (240a, 240b, 240c, 240d) information to the user device (360) by the
+
+     cloud server (310) if online and by the GSM modem (350) if offline. The user device
+
+      (360) comprises of one or more laptops, mobile, smart devices, or any other device.
+
+
+15    Fig. 2 illustrates various parts of Node S (200) that are used in the WQP system
+
+      (100). The Node S (200) includes a microcontroller (210), a transceiver (220), an
+
+     antenna (230) with multiple sensors (240a-240d). Sensors (240a-240d) acquire
+
+     environmental parameters such as temperature sensor (240a), pH sensor (240b)
+
+       salinity sensor(240c) and dissolved oxygen sensor(240d). The input/output module is
+
+20   connected to sensors (240a-240d) and is configured to receive a plurality of sensing
+
+      signals that correspond to the water quality parameters.
+
+
+     The microcontroller (210) processes the signal received from sensors (240a-240d)
+
+     through the input/output module and converts available raw signals to water quality
+
+25   parameters values. All the calculations on raw sensor data are done in microcontroller
+
+      (210) and the processed data is passed to Node C (300) as water quality parameter.
+
+
+      Fig. 3 illustrates various components which may be utilized in Node C (300) that may
+
+     be employed within the water quality prediction system (100). The Node C (300)
+
+
+                                         21</div></section><section class="pdf-page"><h2>Page 22</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      includes a microcontroller (310), a transceiver (320) and an antenna (330). The
+
+      transceiver (320) receives the data send by Node S (200) through the antenna (330).
+
+     The microcontroller (310) depending on the parameter warns the user and displays
+
+      the water quality parameters in the LCD (340). The end-user has the provision to
+
+ 5   monitor  the  farm  using  smartphone  (360) by  accessing  the  cloud  (370)  or
+
+     communicating with the microcontroller (310).
+
+
+      In an embodiment, the microcontroller (310) has the provision to upload the water
+
+      quality parameters to the cloud and inform the end through user smartphone (360).
+
+10   The hybrid CNN-LSTM/GRU DL WQP model is implemented in the cloud (370).
+
+     The WQP using DL is implemented in cloud (370) and the predicted water quality
+
+      parameter can be accessed by the farmer using the smart phone via Node C (300).
+
+     The microcontroller (310) may also use the GSM modem (350) to send information
+
+      to the smartphone without the use of cloud (370).
+
+15
+
+      Fig. 4 illustrates a flowchart (400). At step (410), initialize and sense the water
+
+      quality parameters in the water body (110) using the set of sensors (230a-230d) and
+
+      output the sensed signal. At step (420), the microcontroller (210) reads the sensors
+
+     and stores the values in the memory. At step (430), the microcontroller (210)
+
+20    processes the raw data from each sensor (230a-230d) and converts to water quality
+
+      parameters values. At step (440), all the final values of water quality parameters are
+
+      sent to Node C (300) and the Node S (200), and at step (450), waits for defined time
+
+      for collecting the water quality parameters again.
+
+
+25    Fig. 5 illustrates the flowchart (500) for receiving the sensed data at Node C, using
+
+      the deep learning hybrid CNN-LSTM/GRU model. At step (510), receiving the data
+
+     from Node S (200). At step (520), the received data is stored in the database and the
+
+      data is prepared for feeding to the DL model. At step (530), the data is then used for
+
+   WQP using the Hybrid DL model. The Node C (300) uses the virtual machines in
+
+
+                                         22</div></section><section class="pdf-page"><h2>Page 23</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+     cloud for running the DL models for WQP. At step (540), determine to alarm the user
+
+       at step (550) or pass information in a defined time interval at step (560). The system
+
+      waits for a specified time in case parameters are in the normal range at step (540), and
+
+       at step (570) the process is repeated continuously passing the information to the end-
+
+ 5    user and uploading the data to the cloud.
+
+
+     The present invention is clearly advantageous in providing a technical solution to the
+
+     problems of the prior art. The present invention is advantageous in reducing the risk
+
+      of water quality issues in aquaculture systems. Further,  it is also advantageous in
+
+10   improving the efficiency and effectiveness of aquaculture operations by providing
+
+      early warning of potential water quality issues, enabling timely corrective action to be
+
+      taken. This technology can be used in various types of aquaculture systems, including
+
+      but not limited to marine, freshwater, and brackish water systems.
+
+
+
+
+
+                                         23</div></section><section class="pdf-page"><h2>Page 24</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+   WE CLAIM:
+
+       1. 1. A system (100) for water quality prediction (WQP), comprising:
+
+           one or more nodal units comprises of two or more sensor nodes S (130), and a
+
+              central node C (120); and
+
+ 5          a water medium (110),
+
+                  wherein the central node C (120) is connected to N number of sensor
+
+                  nodes S (130), each sensor node S (130a.....130n) comprises of a
+
+                     transceiver (220), a microcontroller unit (210) and an antenna (230)
+
+                   with two or more sensors (240a, 240b, 240c, and 240d), the central
+
+10               node C (120) comprises of a transceiver (320), a microcontroller unit
+
+                     (310),  a  display  unit  (340),  a  Global  System  for  Mobile
+
+                 Communications (GSM) modem (350), an user device (360), a server
+
+                   (370) and an antenna (330),
+
+                  wherein the sensor node S (130) is deployed in the water medium
+
+15                 (110) to acquire water quality parameters (240a, 240b, 240c, 240d),
+
+                   (310) of the central node C (120) is provided for controlling  and
+
+                    receiving data from the sensor node S (130), and the future values of
+
+                   water  quality parameter values (240a, 240b, 240c, and 240d)  is
+
+                    predicted from acquired water quality parameters physical sensors
+
+20                  (240a, 240b, 240c, and 240 d), and
+
+                  wherein the microcontrollers (210, 310) of the nodal units (130, 120)
+
+                        at the sensor node S is embedded with instructions.
+
+
+       2. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+25   wherein the sensors acquire environmental parameters such as temperature sensor
+
+      (240a), pH sensor (240b), salinity sensor (240c), dissolved oxygen (240d) and the
+
+       like.
+
+
+
+
+
+                                         24</div></section><section class="pdf-page"><h2>Page 25</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+       3. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+     wherein the microcontroller unit (210, 310) of the nodal units (130, 120) comprises of
+
+     a memory module and an input/output module.
+
+
+ 5    5. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+     wherein the memory module is configured to store the water quality parameters
+
+      (240a, 240b, 240c, 240d), and the input/output module is connected to the sensors
+
+      (240a, 240b, 240c, 240d) configured to receive the sensing signals.
+
+
+10    6. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+     wherein the water quality parameters (240a, 240b, 240c, 240d) are sent to the central
+
+     node C (120) from the sensor node S (130) using the transceiver (220, 320) and the
+
+     antenna (230, 330), received at the central node C (120) and stored in a memory and
+
+      the central node C (120) communicates the information and uploads the water quality
+
+15   parameters (240d, 240e) to the server (310).
+
+
+       7. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+     wherein the server (310) is a cloud server where all the deep learning computations
+
+      occur.
+
+20
+
+       8. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+     wherein the microcontroller is configured to use the GSM modem (350) to send water
+
+      quality parameters (240a, 240b, 240c, 240d) information to the user device (360) by
+
+      the cloud server (310) if online and by the GSM modem (350) if offline.
+
+25
+
+       9. The system (100) for water quality prediction (WQP) as claimed in claim 1,
+
+     wherein the user device (360) comprises of one or more laptops, mobile, smart
+
+      devices or any other device.
+
+
+
+
+                                         25</div></section><section class="pdf-page"><h2>Page 26</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+      10. A method (400a, 400b) of working of the system (100) for water quality
+
+      prediction (WQP), comprising:
+
+               initialization (410) of the sensors (240a, 240b, 240c, 240d) for sensing water
+
+              quality parameters in the water medium (110) and output the sensed signal;
+
+ 5           reading (420) the sensors (240a, 240b, 240c, 240d) and storing the values in
+
+             the memory by the microcontroller (210);
+
+             processing (430) the raw data from each sensor and converts to the water
+
+              quality parameters and future values are predicted using deep learning model
+
+              in the cloud (370) of the microcontroller (210);
+
+10          sending (440) data to the central node C (120);
+
+             waiting (450) for predefined time;
+
+             receiving (510) data from the sensor node S (130) and update the data in cloud
+
+             (370);
+
+             data preparation (520) is done without an error before feeding to the deep
+
+15           learning model;
+
+             analyzation (530) of the data using deep learning model CNN-LSTM/GRU
+
+              for predicting the future values, all computations are done in the cloud (370);
+
+            checking (540) whether the predicted water quality parameters are in normal
+
+             range;
+
+20                wherein  if the parameters are in normal range, the information  is
+
+                 communicated (550) to the user and the data is displayed to the user
+
+                   device (360) by the display unit (340),
+
+                  wherein if the parameters are in abnormal range, the information is
+
+                 communicated (560) to the user by an alarm unit,
+
+25           waiting (570) for predefined time;
+
+                  wherein the operation (540) is to determine to alarm the user or pass
+
+                    information in a defined time interval (560), and
+
+             displaying the water quality parameters values (240a, 240b, 240c, 240d) to the
+
+             user device (360) by the display unit (340),
+
+
+                                         26</div></section><section class="pdf-page"><h2>Page 27</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+   PUDUCHERRY
+
+
+
+
+                 wherein the process is repeated continuously passing the information
+
+                    to the end-user and uploading the data to the cloud server (370).
+
+
+    Dated this 07th day of March 2023
+
+
+5
+
+
+
+                                        Signature:
+
+                               Name: Dr. Sudhir Raja Ravindran [IN/PA – 384]
+
+                                                    Agent for Applicant
+
+
+
+
+
+                                        27</div></section><section class="pdf-page"><h2>Page 28</h2><div class="pdf-text">   NAME OF THE APPLICANT: NATIONAL INSTITUTE OF TECHNOLOGY
+    PUDUCHERRY
+
+
+
+
+       HYBRID DEEP LEARNING BASED METHOD AND SYSTEM FOR
+
+           AQUACULTURE WATER QUALITY PREDICTION
+
+
+
+                         ABSTRACT
+
+ 5   The present invention relates to a hybrid deep learning method and system for
+
+      predicting water quality in aquaculture. The system is designed to analyse data from
+
+      various sensors and instruments in real-time and uses this data to make predictions
+
+     about the water quality in aquaculture. The proposed system combines Convolutional
+
+     Neural Networks (CNN) and Long Short-Term Memory Networks (LSTM) or Gated
+
+10   Recurrent Units (GRU) to accurately predict the water quality. The proposed system
+
+       is composed of two phases, including feature extraction and prediction. In the feature
+
+      extraction phase, CNN is used to extract the spatio-temporal features of water quality.
+
+      In the prediction phase, LSTM or GRU is used to learn the temporal patterns of water
+
+      quality. The goal of the system is to improve the efficiency and effectiveness of
+
+15    aquaculture operations by providing early warning of potential water quality issues,
+
+      enabling timely corrective action to be taken. The system is intended to be user-
+
+      friendly and can be easily integrated into existing aquaculture management systems.
+
+     The proposed system is tested on a real-world aquaculture dataset, and the results
+
+     show that the proposed system outperforms other existing methods in terms of
+
+20    prediction accuracy.
+
+
+
+     Reference Figure: Fig. 2 and Fig. 3</div></section></article></main><footer class="wrap">Research materials shared for study and continuation. Document access does not grant a patent licence; third-party rights remain with their holders.</footer></body></html>

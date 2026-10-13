@@ -1,1 +1,0 @@
-document.getElementById('filter').addEventListener('input',event=>{const query=event.target.value.toLocaleLowerCase();for(const item of document.querySelectorAll('#collection li'))item.hidden=!item.textContent.toLocaleLowerCase().includes(query);});

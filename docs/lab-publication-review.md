@@ -32,5 +32,7 @@ Mobile navigation now wraps instead of concealing links horizontally. Case studi
 
 Run `python research/validate_site.py` for local resources and PDF readability. Run `node scripts/check_lab.cjs` with Playwright available and Microsoft Edge installed for all six lab pages at 320, 390, 768 and 1440 pixels. The browser check covers overflow, navigation visibility, current-page indicators, story sections and safe new-tab links. Set `LAB_SCREENSHOTS` to an existing directory for visual review images.
 
-The original Pages build succeeded but its deploy job remained waiting during review. The environment permits the main branch and has no listed required reviewers; the available API responses did not establish why deployment is waiting. No environment protection settings were changed.
+Historical deployment note (12 October): the original build succeeded while its deploy job remained waiting. Subsequent live checks confirmed the curated brief was served successfully. This historical waiting state is not evidence of a current deployment failure; no environment protection settings were changed.
+
+19 October maintenance review: the standard browser check now includes the curated research brief (seven pages at four widths). See [goal review](goal-review.md) for completed priorities and unresolved archival/reproduction work. The public brief contains no copied draft bundles.
 

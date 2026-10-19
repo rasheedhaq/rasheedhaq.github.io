@@ -93,11 +93,15 @@ def sync(source, pdf, update_pages=True):
         for name in ('resume.tex', 'resume.pdf'):
             shutil.copy2(cv/'latest'/name, cv/'previous'/name)
         versions['previous'] = latest
-    (cv/'latest').mkdir(exist_ok=True)
+    (cv/'latest').mkdir(parents=True, exist_ok=True)
     for src, name in ((source, 'resume.tex'), (pdf, 'resume.pdf')):
         shutil.copy2(src, cv/'latest'/name)
+    # Git publishes TeX with LF endings; checksum those bytes, not Windows originals.
+    published_source = source.read_bytes().replace(b'\r\n', b'\n').replace(b'\r', b'\n')
+    (cv/'latest'/'resume.tex').write_bytes(published_source)
     versions['latest'] = {'date': date, 'source_filename': source.name,
-        'source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+        'import_source_sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+        'source_sha256': hashlib.sha256(published_source).hexdigest(),
         'pdf_sha256': hashlib.sha256(pdf.read_bytes()).hexdigest()}
     metadata.write_text(json.dumps(versions, indent=2) + '\n', encoding='utf-8')
     entries = ''.join(f'<li><strong>{key.title()}: {value["date"]}</strong> — <a href="{key}/resume.pdf">PDF</a> · <a href="{key}/resume.tex">LaTeX</a></li>' for key, value in versions.items())

@@ -25,6 +25,8 @@ Update reminder: whenever the master resume changes, publish its matching PDF th
 5. Run `python scripts/test_sync_cv.py`, `python research/validate_site.py`, and `node research/browser_check.cjs`; inspect the Git diff and CV downloads.
 6. Commit the reviewed update and push normally. Avoid force pushes. Recheck the remote head and deployed links.
 
+Source checksums use the published LF-normalized TeX bytes. `import_source_sha256` separately preserves the original local bytes, whose line endings may differ. PDFs remain byte-for-byte copies. Run `python scripts/test_validate_site.py` as well; the publication workflow checks source/PDF checksums automatically.
+
 `--no-web` exists only for importing a historical baseline without changing the portfolio. Do not use it for routine monthly updates.
 
 ## Scope of organization

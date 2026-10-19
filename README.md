@@ -4,6 +4,8 @@ Professional portfolio, current CV, previous CV, and research archive.
 
 - [Portfolio](https://rasheedhaq.github.io/)
 - [AI & Research Lab](https://rasheedhaq.github.io/lab/)
+- [One-page research brief](https://rasheedhaq.github.io/lab/archive/)
+- [Goal review and remaining gaps](docs/goal-review.md)
 - [Lab publication review](docs/lab-publication-review.md)
 - [Latest CV — PDF](cv/latest/resume.pdf) · [LaTeX source](cv/latest/resume.tex)
 - [Previous CV — PDF](cv/previous/resume.pdf) · [LaTeX source](cv/previous/resume.tex)
@@ -19,6 +21,8 @@ rasheedhaq.github.io/
 ├── index.html                 # Main portfolio
 ├── index_ats.html             # Plain HTML CV
 ├── typography.css
+├── lab/                       # Selected project stories
+│   └── archive/index.html     # One self-contained research brief
 ├── cv/
 │   ├── index.html             # Download links and version dates
 │   ├── versions.json          # Source dates and SHA-256 checksums
@@ -64,3 +68,9 @@ Root hosting files `.nojekyll` and `_config.yml` are preserved. Git ignores LaTe
 Publisher DOI links are used instead of redistributing restricted paper PDFs. Only selected thesis documents and three verified grant certificates belong in the research document folder. No correspondence, bank records, unpublished patent drafts or third-party reference patents are included.
 
 The original thesis and selected chapter PDFs are published with the author's explicit approval. Research metadata is bounded by the underlying documents, not a claim that every historical manuscript was published.
+
+## Publication checks
+
+Run `python scripts/test_sync_cv.py`, `python scripts/test_validate_site.py` and `python research/validate_site.py` before publishing. Install `pypdf` (or provide `pdfinfo`) for PDF checks. GitHub Actions runs the Python checks on every push and pull request. These checks validate local links and fragments, PDF readability, CV checksums and the three-file limit for the curated collection; they do not certify research reproduction or external-link availability.
+
+Run `node scripts/check_lab.cjs` with Playwright and Edge available for the seven lab pages at four viewport widths. The complete private work-folder conversion is a separate, incomplete local archive, not part of this website or a publication prerequisite. Do not regenerate the retired bulk public release.

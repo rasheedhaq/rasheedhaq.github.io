@@ -2,7 +2,8 @@
   "latest": {
     "date": "2026-10-12",
     "source_filename": "Rasheed_Abdul_Haq_Resume_12OCT2026.tex",
-    "source_sha256": "5434a318de00e846fafc9cd369cfb4c3a4d7ff6e19a721969893cc9b6ad65cf6",
+    "import_source_sha256": "5434a318de00e846fafc9cd369cfb4c3a4d7ff6e19a721969893cc9b6ad65cf6",
+    "source_sha256": "0b7f426ca5f15208d5e62faa1f55b8d173db56d28e8d62a97079a9e49c2c0a13",
     "pdf_sha256": "0a88da048b5a2237106fa0734577701db8775533759b6b966d41546a68c5a407"
   },
   "previous": {

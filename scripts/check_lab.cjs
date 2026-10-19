@@ -9,7 +9,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320, 390, 768, 1440]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
-      for (const name of ['index', 'virtual-sensing', 'water-quality-prediction', 'monitoring-prototype', 'nammaopen', 'vlc-playlists']) {
+      for (const name of ['index', 'virtual-sensing', 'water-quality-prediction', 'monitoring-prototype', 'nammaopen', 'vlc-playlists', 'archive/index']) {
         await page.goto(pathToFileURL(resolve(__dirname, '../lab', name + '.html')).href);
         await page.evaluate(() => document.fonts.ready);
         const result = await page.evaluate(() => ({
@@ -25,7 +25,7 @@ const assert = require('node:assert/strict');
         assert.equal(result.overflow, false, name + ': page overflow');
         assert.equal(result.hiddenNavigation, false, name + ': hidden navigation');
         assert.equal(result.currentPages, name === 'index' ? 1 : 0);
-        assert.equal(result.sections, name === 'index' ? 0 : 4);
+        assert.equal(result.sections, ['index', 'archive/index'].includes(name) ? 0 : 4);
         assert.equal(result.unsafeLinks, 0);
         console.log(width, name, 'PASS');
         if (process.env.LAB_SCREENSHOTS && ['index', 'virtual-sensing'].includes(name)) {

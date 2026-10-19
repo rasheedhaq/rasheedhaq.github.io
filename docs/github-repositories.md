@@ -1,6 +1,6 @@
 # Public GitHub repository map
 
-Inventory checked on 12 October 2026. Categories describe navigation, not ownership of upstream code or a claim of production readiness. Private repositories are excluded.
+Inventory checked against the public GitHub API on 19 October 2026: 16 public repositories. Categories describe navigation, not ownership of upstream code or a claim of production readiness. Private repositories are excluded. Forks are explicitly identified below.
 
 ## Portfolio and profile
 
@@ -11,27 +11,31 @@ Inventory checked on 12 October 2026. Categories describe navigation, not owners
 
 - [NammaOpen](https://github.com/rasheedhaq/NammaOpen)
 - [arogy_bot](https://github.com/rasheedhaq/arogy_bot)
-- [UnShare](https://github.com/rasheedhaq/UnShare)
+- [UnShare](https://github.com/rasheedhaq/UnShare) / upstream fork
 - [vlc-playlist-manager](https://github.com/rasheedhaq/vlc-playlist-manager)
 
 ## Research and ML experiments
 
 - [DLEVS](https://github.com/rasheedhaq/DLEVS)
 - [Time-series-prediction-with-grid-optimiization-of-Hyperparameters](https://github.com/rasheedhaq/Time-series-prediction-with-grid-optimiization-of-Hyperparameters)
-- [Time_series_RNN](https://github.com/rasheedhaq/Time_series_RNN)
-- [TPA-LSTM](https://github.com/rasheedhaq/TPA-LSTM)
-- [battery-rul-estimation](https://github.com/rasheedhaq/battery-rul-estimation)
+- [Time_series_RNN](https://github.com/rasheedhaq/Time_series_RNN) / upstream fork
+- [TPA-LSTM](https://github.com/rasheedhaq/TPA-LSTM) / upstream fork
+- [battery-rul-estimation](https://github.com/rasheedhaq/battery-rul-estimation) / upstream fork
 
 ## LaTeX templates
 
-- [Indian-Patent-Specifications-LaTeX-Template](https://github.com/rasheedhaq/Indian-Patent-Specifications-LaTeX-Template)
-- [Indian-Patent-Drawings-LaTeX-Template](https://github.com/rasheedhaq/Indian-Patent-Drawings-LaTeX-Template)
+- [Indian-Patent-Specifications-LaTeX-Template](https://github.com/rasheedhaq/Indian-Patent-Specifications-LaTeX-Template) / upstream fork
+- [Indian-Patent-Drawings-LaTeX-Template](https://github.com/rasheedhaq/Indian-Patent-Drawings-LaTeX-Template) / upstream fork
 
 ## Teaching and learning
 
 - [MEAEC](https://github.com/rasheedhaq/MEAEC)
-- [training-data-analyst](https://github.com/rasheedhaq/training-data-analyst)
-- [graphrag](https://github.com/rasheedhaq/graphrag)
+- [training-data-analyst](https://github.com/rasheedhaq/training-data-analyst) / upstream fork
+- [graphrag](https://github.com/rasheedhaq/graphrag) / upstream fork
+
+## Reuse readiness
+
+GitHub currently detects no licence for DLEVS, NammaOpen or the time-series prediction repository. Public visibility alone is not an explicit reuse licence. Before adding one, establish ownership of the code and any institutional/coauthor contributions; datasets and patent rights require separate treatment. No licence has been invented or applied on behalf of another rights holder.
 
 ## Organization policy
 

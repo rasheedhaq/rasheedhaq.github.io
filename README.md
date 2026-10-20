@@ -36,6 +36,8 @@ rasheedhaq.github.io/
 │   ├── cv-workflow.md
 │   └── github-repositories.md
 ├── scripts/
+│   ├── cv_html.py             # Plain CV generated from canonical LaTeX
+│   ├── test_cv_html.py
 │   ├── sync_cv.py
 │   └── test_sync_cv.py
 └── research/

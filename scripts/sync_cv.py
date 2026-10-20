@@ -5,8 +5,12 @@ import html
 import json
 import re
 import shutil
+import sys
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from cv_html import render as render_cv_html, inline as render_inline
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -19,9 +23,16 @@ def update_web(source):
     chevron = text.split(r"\subsection{Chevron", 1)[1].split(r"\end{itemize}", 1)[0]
     bullets = [plain(b) for b in chevron.split(r"\item ")[1:]]
     markup = "<ul>\n" + "\n".join("        <li>" + html.escape(b) + "</li>" for b in bullets) + "\n      </ul>"
-    for name in ("index.html", "index_ats.html"):
+    for name in ("index.html",):
         path = ROOT / name
         page = path.read_text(encoding="utf-8")
+        summary = re.search(r"\\section\{(?:Professional )?Summary\}.*?\\begin\{itemize\}(?:\[[^\]]*\])?(.*?)\\end\{itemize\}", text, re.S)
+        if not summary:
+            raise ValueError('Expected canonical CV summary')
+        summary_html = '<div class="intro-block" style="margin-top:16px">' + ''.join('<p>' + render_inline(item) + '</p>' for item in re.split(r'\\item\s+', summary[1])[1:]) + '</div>'
+        page = re.sub(r'<div class="intro-block"[^>]*>.*?</div>', lambda _: summary_html, page, count=1, flags=re.S)
+        email = re.search(r'\\href\{mailto:([^{}]+)\}', text)[1]
+        page = page.replace('rasheedabdulhaqkp@gmail.com', email)
         org = page.index("Chevron Engine", page.index('<body>'))
         start = page.index('<ul>', org)
         end = page.index('</ul>', start) + len('</ul>')
@@ -56,18 +67,6 @@ def update_web(source):
             page = page.replace('8 years in AI/ML', '8+ years across AI research and ML')
             page = page.replace('8 years applied AI/ML', '8+ years across AI research and applied ML')
             page = page.replace('Production ML across vision, time-series, and LLM systems from research to deployment.', 'AI research and applied ML across vision, time-series, and LLM systems.')
-        else:
-            start = page.index('<!-- ===== PATENTS ===== -->')
-            end = page.index('<div class="exp-entry">', start)
-            project_marker = page.find('<!-- ===== SELECTED PROJECTS ===== -->', start, end)
-            if project_marker >= 0:
-                end = project_marker
-            block = page[start:end]
-            page = page[:start] + page[end:]
-            org = page.index('MEA Engineering College', page.index('<body>'))
-            insertion = page.rfind('<div class="exp-entry">', 0, org)
-            page = page[:insertion] + block + page[insertion:]
-            page = re.sub(r'<p class="pub-entry">[^\n]*Attention-Driven LSTM[^\n]*</p>', '<p class="pub-entry">Rahul Gandh D, Harigovindan V P, Rasheed Abdul Haq K P, and Amrtha Bhide, "Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture," <em>Aquaculture International</em>, vol. 32, pp. 8455–8478, 2024. <a href="https://doi.org/10.1007/s10499-024-01574-5">DOI</a></p>', page)
         page = '\n'.join(line.rstrip() for line in page.splitlines()) + '\n'
         path.write_text(page, encoding='utf-8')
 
@@ -82,6 +81,7 @@ def sync(source, pdf, update_pages=True):
         raise ValueError('A readable source and matching PDF are required.')
     if pdf.stem != source.stem or pdf.stat().st_mtime < source.stat().st_mtime:
         raise ValueError('Compile the matching dated PDF after saving the source before syncing.')
+    rendered_cv = render_cv_html(source.read_text(encoding='utf-8')) if update_pages else None
     cv = ROOT / 'cv'
     metadata = cv / 'versions.json'
     versions = json.loads(metadata.read_text()) if metadata.exists() else {}
@@ -108,6 +108,7 @@ def sync(source, pdf, update_pages=True):
     (cv/'index.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CV Downloads — Rasheed Abdul Haq</title><style>body{font:18px/1.6 system-ui;max-width:760px;margin:40px auto;padding:0 20px}li{margin:16px 0}</style></head><body><h1>CV downloads</h1><p>Rasheed Abdul Haq Kozhiparamban</p><ul>' + entries + '</ul><p>Earlier versions remain available in Git history.</p><p><a href="../index.html">Portfolio</a> · <a href="../index_ats.html">Plain CV</a></p></body></html>\n', encoding='utf-8')
     if update_pages:
         update_web(source)
+        (ROOT/'index_ats.html').write_text(rendered_cv, encoding='utf-8')
     print(f'Synced {date}. Latest/previous files retained; local dated originals preserved.')
 
 if __name__ == '__main__':

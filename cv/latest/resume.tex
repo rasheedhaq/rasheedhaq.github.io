@@ -12,11 +12,17 @@
 
 \fancyhf{}
 
-\setlist[itemize]{left=0.5cm,label={\tiny$\bullet$},itemsep=0.5ex}
+\setlist[itemize]{left=0.5cm,label={\tiny$\bullet$},itemsep=0.25ex}
 
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
 \titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
+\titlespacing*{\section}{0pt}{1.4ex plus .2ex}{.7ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .2ex}{.5em}
 
+\ifdefined\pdfgentounicode
+\input{glyphtounicode}
+\pdfgentounicode=1
+\fi
 \setlength{\emergencystretch}{1em}
 \begin{document}
 	\pagestyle{empty}
@@ -37,17 +43,13 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 
 
 
-\section{Summary}
+\section{Professional Summary}
 \begin{itemize}[left=0pt]
-	
-	\item Senior AI/ML Engineer with a \textbf{Ph.D.} in Artificial Intelligence and 8+ years of experience across AI research and applied machine learning, spanning \textbf{Computer Vision}, \textbf{Industrial AI}, \textbf{Generative AI}, \textbf{Predictive Analytics}, and \textbf{Time-Series Forecasting}.
-	
-	\item Proven expertise in designing and deploying end-to-end AI solutions spanning data engineering, feature engineering, model development, validation, MLOps, inference, and human-in-the-loop workflows for enterprise and industrial applications.
-	
-	\item Hands-on experience with \textbf{Python}, \textbf{PyTorch}, \textbf{TensorFlow}, \textbf{OpenCV}, \textbf{YOLOv8/YOLO11}, \textbf{Azure ML}, \textbf{AWS Bedrock}, and modern LLM ecosystems for scalable AI development and deployment.
-	
-	\item Author of peer-reviewed IEEE publications and three granted Indian patents in Deep Learning, Virtual Sensing, and Predictive Analytics.
-	
+\item Senior Machine Learning Engineer with a \textbf{Ph.D. in Artificial Intelligence} and \textbf{8+ years across AI research and applied ML}, specializing in industrial computer vision, time-series forecasting, virtual sensing, and enterprise generative AI.
+
+\item Experience across the ML lifecycle: data quality, model development, validation, deployment, \textbf{MLOps}, and human review. Hands-on with Python, PyTorch, TensorFlow, OpenCV, Azure ML, and AWS Bedrock.
+
+\item Co-inventor on \textbf{three granted Indian patents} and co-author of \textbf{five journal papers}, including IEEE and Springer publications.
 \end{itemize}
 	
 	\section{Education}
@@ -64,29 +66,23 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \hfill \textbf{July 2025 -- Present} 
 
 \begin{itemize}
-	\item Developed production-grade \textbf{computer vision} solutions for industrial inspection, asset integrity, and worker safety in oil \& gas, spanning data ingestion, annotation, model training, validation, deployment, and human-in-the-loop review.
+\item Led the AI/ML handover of a \textbf{production drone-inspection platform} to an in-house team, defining data-readiness and knowledge-transfer criteria and supporting end-to-end \textbf{user acceptance testing (UAT)} through sign-off.
 
-	\item Led the AI/ML handover of a production drone-inspection platform to an in-house team, defining data-readiness and knowledge-transfer criteria and supporting end-to-end \textbf{user acceptance testing (UAT)} through sign-off. Contributed to serverless architecture simplification and assessed user-triggered inference workflows.
+\item Designed a two-stage component-segmentation and corrosion-detection pipeline to suppress background false positives; aligned independently versioned \textbf{Azure ML} endpoints, model registration, and inference orchestration. Supported production monitoring and serverless architecture simplification.
 
-	\item Designed a two-stage component-segmentation and corrosion-detection pipeline to suppress background false positives; aligned independently versioned \textbf{Azure ML} endpoints and inference orchestration. Supported model training, registry, data-platform integration, and production monitoring.
+\item Built high-resolution inspection workflows with overlapping tiles, prediction stitching, configurable class thresholds, and structured outputs; merged detections into continuous annotations for inspector review.
 
-	\item Built high-resolution inspection workflows with overlapping image tiles, prediction stitching, configurable class thresholds, and structured outputs, displaying merged detections as continuous annotations for inspector review.
+\item Improved utility-asset segmentation through dataset audits, class-imbalance analysis, label refinement, and preprocessing reviews; established annotation standards and subject matter expert (SME) validation gates.
 
-	\item Improved utility-asset component segmentation through dataset audits, class-imbalance analysis, annotation-quality reviews, class refinement, and preprocessing recommendations; established labeling standards, validation gates, and subject matter expert (SME) review workflows.
+\item Delivered worker detection and contributed to safety video analytics covering activity recognition, personal protective equipment (PPE), camera placement, and occlusion; packaged a \textbf{YOLO11 fire-and-smoke model} for edge testing.
 
-	\item Delivered worker detection and developed safety-focused video analytics addressing activity recognition, personal protective equipment (PPE) visibility, camera placement, occlusion, and data quality; packaged a \textbf{YOLO11 fire-and-smoke detection model} for edge-device testing.
+\item Built a physics-based \textbf{thermal tank-level estimation prototype} using radiometric calibration and temperature-gradient analysis; delivered a web demo with weak-signal handling. Ground-truth validation remains pending.
 
-	\item Advanced \textbf{digital twin} initiatives through sensor-data integration with virtual asset models for condition monitoring, work planning, and troubleshooting; supplied annotated inspection outputs for a 3D integration pilot.
+\item Contributed sensor-data integration and annotated inspection outputs to \textbf{digital twin} workflows for condition monitoring and planning; advised on change-detection methods, user-triggered inference, and production cost and licensing considerations.
 
-	\item Built a physics-based \textbf{thermal tank-level estimation prototype} using radiometric calibration, robust temperature profiles, and gradient detection; delivered a web demo with weak-signal handling. Ground-truth validation remains pending.
+\item Evaluated and shortlisted computer vision vendors for environmental, health, and safety (EHS), assessing accuracy, latency, hazardous-area certifications (ATEX/IECEx), edge readiness, privacy, and workflow integration.
 
-	\item Advised on a \textbf{change-detection proof of concept} using image alignment, visual similarity, and vision-language models; recommended evaluation of classical alternatives and production cost and licensing checks.
-
-	\item Evaluated and shortlisted computer vision vendors for environmental, health, and safety (EHS) use cases, assessing model accuracy, latency, hazardous-area certifications (ATEX/IECEx), edge deployment, data privacy, and workflow integration.
-
-	\item Authored an annotation handbook, architecture references, and training material; co-authored enterprise CV deployment guidelines covering risk-based metrics, verification, human accountability, change control, and lifecycle governance.
-
-	\item Led ML knowledge transfer, sprint planning, roadmap proposals, stakeholder demonstrations, and incremental SME model reviews, collaborating with product, software, data engineering, operations, inspectors, and vendors on deployment and future CV opportunities. Conducted Senior ML Engineer interviews using structured technical questions and evaluation rubrics.
+\item Authored an annotation handbook and architecture/training references; co-authored CV deployment guidelines on risk-based metrics, verification, and lifecycle governance. Led planning, knowledge transfer, stakeholder demos, SME reviews, and structured Senior ML Engineer interviews.
 \end{itemize}	
 	
 	
@@ -94,8 +90,8 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \textbf{Lead AI/ML Engineer} \\
 \hfill \textbf{April 2025 -- June 2025} (3-month contract engagement)
 \begin{itemize}
-	\item Built secure \textbf{RAG pipelines} using AWS Bedrock and Claude with enterprise data from \textbf{SharePoint and Confluence} via MCP, enforcing citation tracking and zero internet leakage.
-	\item Integrated and tuned \textbf{Jira/Confluence MCP clients}, using AWS Secrets Manager for tokenized access and validated \texttt{--space/project} parameters.
+	\item Built secure \textbf{RAG pipelines} using AWS Bedrock and Claude with enterprise data from \textbf{SharePoint and Confluence} via MCP, with source citations and retrieval restricted to enterprise knowledge sources.
+	\item Integrated and tuned \textbf{Jira/Confluence MCP clients}, using AWS Secrets Manager for token-based access and validating source scope parameters.
 	\item Developed \textbf{LLM tools for task analysis} and automated risk scanners, streamlining deployments across Windows and AWS EC2 environments.
 \end{itemize}	
 	
@@ -105,29 +101,17 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \textbf{Senior Software Engineer AI/ML} \\
 \hfill \textbf{February 2023 -- February 2025} (2 years 1 month)
 \begin{itemize}
-	% --- Production-Ready Computer Vision & Deep Learning ---
-	\item Developed production-ready computer vision solutions for industrial and agricultural applications, leveraging \textbf{YOLOv8} for object detection and vision-LLM pipelines for advanced feature extraction.
-	\item Deployed deep learning techniques for real-time \textbf{action recognition} and video analytics, implementing models such as \textbf{SlowFast}.
-	\item Created methods for \textbf{Field of View (FOV)} validation to maintain camera alignment, combining feature matching, optical flow, and statistical comparisons.
-	\item Built AI pipelines for \textbf{object segmentation}, classification, and feature extraction using segmentation models (\textbf{Unet}, \textbf{DeepLabV3}, \textbf{PSPNet}).
-	\item Processed \textbf{3D point clouds} to generate segmentation masks, delivering accurate feature extraction for automation systems.
-	\item Applied \textbf{Random Forest}, \textbf{Gradient Boosting}, and \textbf{MLP} classifiers for robust, high-accuracy predictions across diverse datasets.
-	
-	% --- Data Quality, Augmentation, and Hyperparameter Tuning ---
-	\item Enhanced data quality and balance via \textbf{image clustering} and model evaluation techniques, followed by \textbf{data augmentation} and hyperparameter tuning to improve model performance.
-	\item Integrated \textbf{statistical analysis} and geometric transformations to optimize algorithmic precision for production environments.
-	
-	% --- LLM-Based Retrieval, NLP, and Agentic Workflows ---
-	\item Implemented \textbf{LLM-based retrieval systems} to extract structured information from PDFs using \textbf{Vector Databases} (FAISS, Pinecone) and \textbf{Retrieval-Augmented Generation (RAG)}.
-	\item Orchestrated \textbf{agentic workflows} via \textbf{LangChain} for dynamic query generation, structured output validation, and multi-step reasoning with LLMs.
-	\item Developed prototypes leveraging \textbf{Generative AI} for summarizing SOP documents and automating question-answering systems, ensuring secure role-based access to sensitive data.
-	
-	% --- MLOps & Azure Integration ---
-	\item Utilized \textbf{Azure AI services} (Azure Machine Learning, Cognitive Services) to streamline model training, deployment, and monitoring.
-	\item Deployed \textbf{MLOps} workflows using \textbf{MLflow} for experiment tracking, model versioning, and containerized deployment on \textbf{Azure}.
-	
-	% --- Collaboration & Mentorship ---
-	\item Drove end-to-end design, execution, and evaluation of AI model experiments, collaborating with cross-functional teams and mentoring junior engineers on deep learning best practices.
+\item Developed production computer vision pipelines for industrial and agricultural applications using \textbf{YOLOv8}, segmentation models (U-Net, DeepLabV3, PSPNet), and vision-language models.
+
+\item Implemented real-time action recognition with \textbf{SlowFast}; validated camera field of view using feature matching, optical flow, and statistical comparisons.
+
+\item Processed \textbf{3D point clouds} for segmentation and feature extraction; applied Random Forest, Gradient Boosting, and MLP classifiers to structured prediction tasks.
+
+\item Improved dataset quality through image clustering, augmentation, statistical analysis, geometric transformations, and hyperparameter tuning.
+
+\item Built PDF retrieval and \textbf{RAG} workflows with FAISS, Pinecone, and LangChain, including structured extraction, SOP summarization, multi-step LLM workflows, and role-based access.
+
+\item Used \textbf{Azure ML} and Azure AI services for training and deployment, with \textbf{MLflow} for experiment tracking and model versioning; led experiments and mentored junior engineers.
 \end{itemize}
 
 	
@@ -135,19 +119,13 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \textbf{Senior Research Fellow} \\
 \hfill \textbf{July 2018 -- January 2023} (4 years 7 months)
 \begin{itemize}
-	\item Developed virtual sensing and predictive analytics solutions for multivariate time-series forecasting of water quality parameters using deep learning.
-	
-	\item Engineered and optimized deep learning models (LSTM, GRU, Bi-LSTM) for multivariate time-series forecasting, improving prediction accuracy for aquaculture management.
-	
-	\item Proposed and implemented hybrid CNN-LSTM and CNN-GRU architectures for real-time predictive modeling, balancing forecasting accuracy and computational efficiency.
-	
-	\item Researched hyperparameter optimization (learning rate, epochs, batch size) to maximize model performance, achieving significant reductions in computation time.
-	\item Applied \textbf{attention mechanisms} to deep learning models to enhance the accuracy of water quality predictions by focusing on the most relevant features in time-series data.
-	\item Published peer-reviewed journal papers on predictive modeling, virtual sensing, and deep learning for time-series forecasting.
-	\item Filed and was granted \textbf{patents} for new methods in virtual sensing and hybrid deep learning systems for aquaculture water quality monitoring.
-	\item Conducted real-world experiments on aquaculture datasets (e.g., ADAK and MAC datasets) to validate the accuracy of the developed models.
-	\item Designed and implemented an IoT-based low-cost water quality monitoring system, using sensors and cloud-based virtual sensing to provide real-time data for farmers.
-	\item Built and validated water quality estimation models based on low-cost sensor data, reducing dependency on expensive sensors while maintaining high accuracy in dissolved oxygen prediction.
+\item Developed \textbf{virtual sensing} and multivariate time-series forecasting for aquaculture water quality using LSTM, GRU, bidirectional, hybrid CNN-LSTM/CNN-GRU, and attention-based models.
+
+\item Evaluated forecasting accuracy and computational efficiency through hyperparameter optimization and experiments on aquaculture datasets.
+
+\item Built an \textbf{IoT-based low-cost monitoring system} and dissolved-oxygen estimation models using sensor data to reduce reliance on expensive physical sensors.
+
+\item Co-authored peer-reviewed publications and co-invented patented virtual-sensing and hybrid prediction methods; resulting publications and grants are listed below.
 \end{itemize}
 	
 \subsection{Patents}
@@ -173,35 +151,21 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \hfill \textbf{June 2015 -- July 2018} (3 years 1 month)
 
 \begin{itemize}
+\item Taught undergraduate and postgraduate electronics courses, including Digital Signal Processing, Signals \& Systems, Digital System Design, and Communication Systems; developed course and laboratory materials for the KTU curriculum transition.
 
-\item Delivered undergraduate and postgraduate courses in Digital Signal Processing, Signals \& Systems, Digital System Design, Basics of Electronics Engineering, Electronic Circuits, and Communication Systems, while developing structured course materials aligned with the APJ Abdul Kalam Technological University (KTU) curriculum.
-
-\item Led the department's transition from the Calicut University syllabus to the KTU curriculum by preparing course files, lecture notes, assessment plans, question banks, laboratory manuals, and outcome-based evaluation documents.
-
-\item Served as Class Tutor for the 2014--2018 Electronics \& Communication Engineering batch, managing student mentoring, attendance analytics, academic performance tracking, parent interactions, and intervention plans for academically at-risk students.
-
-\item Coordinated B.Tech Mini Projects, B.Tech Seminars, and M.Tech Seminar activities by organizing student groups, assigning faculty mentors, scheduling evaluations, and consolidating academic assessments.
-
-\item Guided undergraduate engineering projects in embedded systems and wireless technologies while mentoring students in technical writing, project execution, and research presentation.
-
-\item Conducted laboratory sessions in Basic Electronics, Linear Integrated Circuits, and Communication Systems, and served as an External Laboratory Examiner for Electronics laboratories under the university examination system.
-
-\item Developed spreadsheet-based academic tracking systems for attendance, internal assessment, and departmental reporting, improving the efficiency and accuracy of academic administration.
-
+\item Mentored students, guided embedded/wireless projects, coordinated seminars and project assessments, and served as an external laboratory examiner. Built spreadsheet-based attendance and academic-performance tracking tools.
 \end{itemize}
 
 \subsection{Way in Electronic Solutions, Calicut, India}
 \textbf{Founder \& Senior Embedded Software Engineer} \\
-\hfill \textbf{August 2014 -- June 2017 (Part-time while serving as Assistant Professor)} (2 years 11 months)
+\hfill \textbf{August 2014 -- June 2017} (2 years 11 months; part-time alongside teaching from June 2015)
 
 \begin{itemize}
-\item Co-founded an embedded systems startup delivering custom industrial automation, smart parking, medical-device testing, and intelligent monitoring solutions from concept through deployment.
-\item Led end-to-end product development, including requirements analysis, system architecture, embedded firmware development, hardware integration, testing, technical documentation, deployment, and customer support.
-\item Designed and developed embedded products including the Intelligent Parking Guidance System (IPGS), Ultrasound Probe Test System, GSM-based Security System, Digital Signage solutions, and Animal Health Monitoring System (AHMS).
-\item Engineered Embedded C firmware for 8051-based systems and Raspberry Pi applications, integrating RS-485/UART communication, ultrasonic sensors, LED driver interfaces, and Linux-based embedded platforms.
-\item Built web-based monitoring and management applications using PHP, MySQL, JavaScript, HTML/CSS, and XAMPP for real-time visualization, remote monitoring, and data management.
-\item Authored high-level design documents (HLDs), coding standards, technical proposals, quotations, business plans, and customer presentations while supporting product planning and engineering best practices.
-\item Collaborated directly with customers, technology partners, and multidisciplinary teams to translate business requirements into deployable engineering solutions while contributing to startup operations, recruitment, and business development.
+\item Co-founded an embedded systems startup and led requirements, architecture, firmware, hardware integration, testing, deployment, and customer support for industrial automation and monitoring products.
+
+\item Developed parking guidance, ultrasound probe testing, security, digital signage, and animal-health monitoring solutions using \textbf{Embedded C}, 8051, Raspberry Pi, Linux, RS-485/UART, and sensor interfaces.
+
+\item Built web monitoring interfaces with PHP, MySQL, JavaScript, and HTML/CSS; authored design documents, coding standards, technical proposals, and customer presentations.
 \end{itemize}
 
 \subsection{M. N. Dastur \& Co. (P) Ltd., Bengaluru, India}
@@ -209,11 +173,9 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \hfill \textbf{September 2013 -- July 2014} (11 months)
 
 \begin{itemize}
-\item Engineered an Automatic Number Plate Recognition (ANPR) system for Indian vehicles using Computer Vision and Digital Image Processing as part of an M.Tech internship project targeting embedded DSP/ARM platforms.
-\item Designed and implemented the complete recognition pipeline covering license plate localization, character segmentation, Optical Character Recognition (OCR), and Support Vector Machine (SVM)-based classification using MATLAB, OpenCV, and C++.
-\item Implemented image preprocessing, Sobel edge detection, Otsu thresholding, morphological operations, contour analysis, histogram equalization, affine rotation correction, and feature extraction to improve recognition robustness.
-\item Ported and evaluated the OpenCV implementation on Ubuntu Linux running on the ARM-based BeagleBoard-xM platform, addressing embedded deployment and cross-compilation challenges.
-\item Authored core C++ modules, MATLAB algorithms, training utilities, technical documentation, and project reports while validating the solution through iterative prototype development and engineering reviews.
+\item Developed an \textbf{Automatic Number Plate Recognition (ANPR)} pipeline for Indian vehicles using MATLAB, OpenCV, and C++, covering plate localization, character segmentation, OCR, and SVM classification.
+
+\item Implemented image preprocessing and geometric correction, then ported and evaluated the pipeline on Ubuntu Linux and an ARM-based \textbf{BeagleBoard-xM}; documented prototype results and deployment challenges.
 \end{itemize}
 
 
@@ -222,11 +184,9 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 \hfill \textbf{January 2010 -- February 2012}  (2 years 2 months)
 
 \begin{itemize}
-\item Monitored nationwide telecom network health, service availability, alarms, and key performance indicators (KPIs) using Operations \& Maintenance Center (OMC-R) network management tools.
-\item Performed network fault detection, troubleshooting, root cause analysis, and performance optimization by coordinating with field engineers, vendors, and cross-functional operations teams to minimize service disruptions.
-\item Coordinated planned network outages, preventive maintenance activities, and vendor-recommended corrective actions while ensuring controlled execution with minimal customer impact.
-\item Provided remote technical support for fault investigation, managed alarm escalation processes, classified network outages, and ensured timely incident resolution in accordance with established escalation procedures.
-\item Analyzed network alarm trends and generated daily, weekly, and monthly operational reports to support performance monitoring, reliability improvements, and continuous network optimization.
+\item Monitored telecom network health, service availability, alarms, and KPIs through OMC-R tools; investigated faults and coordinated root-cause analysis with field engineers and vendors.
+
+\item Managed alarm escalations, planned outages, preventive maintenance, and remote troubleshooting; analyzed trends and produced operational reliability reports.
 \end{itemize}
 
 \section{Personal AI Projects}
@@ -237,7 +197,7 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 	\item Implemented multi-provider LLM fallback and persistent rate-limit tracking for robust uptime.
 	\item Built precise doctor-matching with exclude-keyword logic to prevent misclassification.
 \end{itemize}
-\textit{Stack: Python, python-telegram-bot, Groq (LLM), OpenRouter/Gemini, HuggingFace, CSV (data), SQLite (planned), Railway (deployment)}
+\textit{Stack: Python, python-telegram-bot, Groq (LLM), OpenRouter/Gemini, HuggingFace, CSV (data), Railway (deployment)}
 \textit{Links: \href{https://github.com/rasheedhaq/arogy_bot}{GitHub} \;|\; \href{https://t.me/arogyamitr_bot}{Demo}}
 
 
@@ -258,7 +218,6 @@ GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 	\item \textbf{Professional Skills:} Technical Leadership, Cross-functional Collaboration, Technical Mentoring, Stakeholder Communication, Annotation Standards, Model Verification, UAT, Technical Documentation
 \end{itemize}
 	
-\section*{References}
-Available upon request.
+
 	
 \end{document}

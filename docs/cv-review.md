@@ -6,7 +6,7 @@ Maintain an accurate, confidential-information-safe CV from periodic employer wo
 
 ## Highest-value improvements completed
 
-1. Reduced the current master from five pages to three at the existing 10-point body size, primarily by merging repetitive duties and shortening older roles. Retained every role/date, all three patents, all five journal papers, and the key original and new Chevron contributions. Patents/publications remain directly under NIT Puducherry. The open 12 October file was revised in place as requested; this review adds no post-log work claims.
+1. Reduced the current master from five pages to three at the existing 10-point body size, primarily by merging repetitive duties and shortening older roles. Retained every role/date, all three patents, all five journal papers, and the key original and new Chevron contributions. Patents/publications remain directly under NIT Puducherry. The three-page editorial revision is saved as a new 20 October local copy; the original 12 October files have been restored from Git. This review adds no post-log work claims.
 2. Kept claims bounded by evidence: separated AI research from production experience, retained the thermal prototype's pending ground-truth status, omitted unspecified segmentation percentages, softened an absolute enterprise-data claim, and removed a planned database from the implemented project stack. Clarified that the embedded role overlapped teaching from June 2015, rather than throughout the entire role.
 3. Replaced partial plain-HTML synchronization with generation from the canonical LaTeX. Plain HTML now uses the same summary, contact information, role details, dates, skills and publications, with no skills table or floating date fields. Unknown LaTeX commands fail rather than silently discarding text. Added a source/output parity check and retained existing version-rotation and newline-checksum checks.
 4. Refreshed the existing local LinkedIn draft, including previously omitted contributions, qualified prototype wording, and current published CV links. It remains a draft; no live LinkedIn changes were made.
@@ -19,7 +19,7 @@ Repeated bullet expansion, replacing rather than merging the original Chevron se
 
 The revised source compiles, all three PDF pages were visually inspected, and PDF text extraction was checked for the contact details, roles, dates, patent identifiers and publication content. These are local readability checks, not an actual employer ATS run or an automated match score. The plain CV renderer is deliberately limited to this LaTeX template; new commands require explicit support.
 
-The latest filename/version date remains 12 October 2026, with this editorial review recorded on 20 October. August remains the previous snapshot, and older October revisions remain in Git history. Dated local originals were not renamed or removed.
+The latest filename/version date is 20 October 2026. The original five-page 12 October source/PDF are restored locally and are the previous GitHub snapshot. August remains available locally and through Git history. Future local updates must use a new dated copy; same-day changes use an unused revision suffix.
 
 ## Unresolved
 

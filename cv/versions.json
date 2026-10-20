@@ -1,15 +1,16 @@
 {
   "latest": {
-    "date": "2026-10-12",
-    "source_filename": "Rasheed_Abdul_Haq_Resume_12OCT2026.tex",
+    "date": "2026-10-20",
+    "source_filename": "Rasheed_Abdul_Haq_Resume_20OCT2026.tex",
     "import_source_sha256": "c2b53c7f6cb846edc15b60b511f57b5e52fadcefa62b4e9ecfa6c8d4c1b0c1d4",
     "source_sha256": "4ee93ce611a13dff9b810ba87993fd66800bf56b118c255ca7349079f11c6311",
     "pdf_sha256": "61b8e41821d8c8ff4adf5236de6601d1aecf95e5ff98cd93455452bd302ca67a"
   },
   "previous": {
-    "date": "2026-08-04",
-    "source_filename": "Rasheed_Abdul_Haq_Resume_04AUG2026.tex",
-    "source_sha256": "60df5b9626444d9c6c68c6bcc1571d7b817244aec44ebae4543e33f1c3a27891",
-    "pdf_sha256": "8e6699c17714717381684f08d7a488a9318fa0d891b80cc66b6cac1388169d85"
+    "date": "2026-10-12",
+    "source_filename": "Rasheed_Abdul_Haq_Resume_12OCT2026.tex",
+    "import_source_sha256": "5434a318de00e846fafc9cd369cfb4c3a4d7ff6e19a721969893cc9b6ad65cf6",
+    "source_sha256": "0b7f426ca5f15208d5e62faa1f55b8d173db56d28e8d62a97079a9e49c2c0a13",
+    "pdf_sha256": "0a88da048b5a2237106fa0734577701db8775533759b6b966d41546a68c5a407"
   }
 }

@@ -8,7 +8,7 @@
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{fancyhdr}
-\usepackage{fontawesome5}  % Ensure installed
+
 
 \fancyhf{}
 
@@ -17,6 +17,7 @@
 \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
 \titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[:]
 
+\setlength{\emergencystretch}{1em}
 \begin{document}
 	\pagestyle{empty}
 	
@@ -27,13 +28,10 @@
 	\vspace{-2ex}
 	
 	\begin{center}
-		\begin{tabular}{rl}
-			\faIcon{envelope}  & \href{mailto:rasheedabdulhaq@gmail.com}{rasheedabdulhaq@gmail.com} \\			
-			\faIcon{linkedin}  & \href{https://www.linkedin.com/in/rasheedabdulhaq}{linkedin.com/in/rasheedabdulhaq} \\
-			\faIcon{github}  & \href{https://github.com/rasheedhaq}{github.com/rasheedhaq} \\
-			\faIcon{map-marker-alt}  & Bengaluru, Karnataka, India \\
-			\faIcon{phone}  & \href{tel:+919400472727}{+91 94004 72727} \\
-		\end{tabular}
+		Email: \href{mailto:rasheedabdulhaq@gmail.com}{rasheedabdulhaq@gmail.com} \quad Phone: +91 94004 72727 \\
+Bengaluru, Karnataka, India \\
+LinkedIn: \href{https://www.linkedin.com/in/rasheedabdulhaq}{linkedin.com/in/rasheedabdulhaq} \\
+GitHub: \href{https://github.com/rasheedhaq}{github.com/rasheedhaq}
 	\end{center}
 	
 
@@ -42,11 +40,11 @@
 \section{Summary}
 \begin{itemize}[left=0pt]
 	
-	\item Senior AI/ML Engineer with a \textbf{Ph.D.} in Artificial Intelligence and 8+ years of experience delivering production AI systems across \textbf{Computer Vision}, \textbf{Industrial AI}, \textbf{Generative AI}, \textbf{Predictive Analytics}, and \textbf{Time-Series Forecasting}.
+	\item Senior AI/ML Engineer with a \textbf{Ph.D.} in Artificial Intelligence and 8+ years of experience across AI research and applied machine learning, spanning \textbf{Computer Vision}, \textbf{Industrial AI}, \textbf{Generative AI}, \textbf{Predictive Analytics}, and \textbf{Time-Series Forecasting}.
 	
 	\item Proven expertise in designing and deploying end-to-end AI solutions spanning data engineering, feature engineering, model development, validation, MLOps, inference, and human-in-the-loop workflows for enterprise and industrial applications.
 	
-	\item Hands-on experience with \textbf{Python}, \textbf{PyTorch}, \textbf{TensorFlow}, \textbf{OpenCV}, \textbf{YOLOv8}, \textbf{Azure ML}, \textbf{AWS Bedrock}, and modern LLM ecosystems for scalable AI development and deployment.
+	\item Hands-on experience with \textbf{Python}, \textbf{PyTorch}, \textbf{TensorFlow}, \textbf{OpenCV}, \textbf{YOLOv8/YOLO11}, \textbf{Azure ML}, \textbf{AWS Bedrock}, and modern LLM ecosystems for scalable AI development and deployment.
 	
 	\item Author of peer-reviewed IEEE publications and three granted Indian patents in Deep Learning, Virtual Sensing, and Predictive Analytics.
 	
@@ -66,29 +64,29 @@
 \hfill \textbf{July 2025 -- Present} 
 
 \begin{itemize}
-	
-	\item Developed production-grade computer vision solutions for industrial inspection, asset integrity, and worker safety applications in the oil \& gas sector.
-	
-	\item Advanced digital twin initiatives by integrating real-time sensor data with virtual asset models for condition monitoring, work planning, and faster troubleshooting.
-	
-	\item Evaluated and shortlisted computer vision vendors for EHS use cases through an RFP-style benchmark covering model accuracy (mAP/vmAP), latency, hazardous-area certifications (ATEX/IECEx), edge deployment, data privacy, and workflow integration.
-	
-	\item Led end-to-end AI solution development, including data ingestion, annotation strategy, model training, validation, deployment, inference, and human-in-the-loop review.
-	
-	\item Supported cloud-native MLOps practices including scalable model training, model registry, inference orchestration, data platform integration, and production monitoring.
-	
-	\item Improved model readiness through dataset audits, annotation quality reviews, class definition refinement, preprocessing recommendations, and validation gate design.
-	
-	\item Established annotation guidelines, quality review workflows, labeling standards, and SME validation processes to improve dataset consistency.
-	
-	\item Built high-resolution inspection imagery workflows involving image tiling, prediction stitching, confidence filtering, and structured output generation.
-	
-	\item Delivered safety-focused video analytics involving worker detection, activity recognition, PPE visibility, camera placement, occlusion handling, and data quality assessment.
-	
-	\item Authored technical documentation, architecture references, annotation handbooks, training material, and roadmap proposals while supporting knowledge transfer across teams.
-	
-	\item Collaborated with product owners, software engineers, data engineers, operations teams, inspectors, SMEs, and vendors to deliver deployable AI solutions and identify future computer vision opportunities.
-	
+	\item Developed production-grade \textbf{computer vision} solutions for industrial inspection, asset integrity, and worker safety in oil \& gas, spanning data ingestion, annotation, model training, validation, deployment, and human-in-the-loop review.
+
+	\item Led the AI/ML handover of a production drone-inspection platform to an in-house team, defining data-readiness and knowledge-transfer criteria and supporting end-to-end \textbf{user acceptance testing (UAT)} through sign-off. Contributed to serverless architecture simplification and assessed user-triggered inference workflows.
+
+	\item Designed a two-stage component-segmentation and corrosion-detection pipeline to suppress background false positives; aligned independently versioned \textbf{Azure ML} endpoints and inference orchestration. Supported model training, registry, data-platform integration, and production monitoring.
+
+	\item Built high-resolution inspection workflows with overlapping image tiles, prediction stitching, configurable class thresholds, and structured outputs, displaying merged detections as continuous annotations for inspector review.
+
+	\item Improved utility-asset component segmentation through dataset audits, class-imbalance analysis, annotation-quality reviews, class refinement, and preprocessing recommendations; established labeling standards, validation gates, and subject matter expert (SME) review workflows.
+
+	\item Delivered worker detection and developed safety-focused video analytics addressing activity recognition, personal protective equipment (PPE) visibility, camera placement, occlusion, and data quality; packaged a \textbf{YOLO11 fire-and-smoke detection model} for edge-device testing.
+
+	\item Advanced \textbf{digital twin} initiatives through sensor-data integration with virtual asset models for condition monitoring, work planning, and troubleshooting; supplied annotated inspection outputs for a 3D integration pilot.
+
+	\item Built a physics-based \textbf{thermal tank-level estimation prototype} using radiometric calibration, robust temperature profiles, and gradient detection; delivered a web demo with weak-signal handling. Ground-truth validation remains pending.
+
+	\item Advised on a \textbf{change-detection proof of concept} using image alignment, visual similarity, and vision-language models; recommended evaluation of classical alternatives and production cost and licensing checks.
+
+	\item Evaluated and shortlisted computer vision vendors for environmental, health, and safety (EHS) use cases, assessing model accuracy, latency, hazardous-area certifications (ATEX/IECEx), edge deployment, data privacy, and workflow integration.
+
+	\item Authored an annotation handbook, architecture references, and training material; co-authored enterprise CV deployment guidelines covering risk-based metrics, verification, human accountability, change control, and lifecycle governance.
+
+	\item Led ML knowledge transfer, sprint planning, roadmap proposals, stakeholder demonstrations, and incremental SME model reviews, collaborating with product, software, data engineering, operations, inspectors, and vendors on deployment and future CV opportunities. Conducted Senior ML Engineer interviews using structured technical questions and evaluation rubrics.
 \end{itemize}	
 	
 	
@@ -161,12 +159,13 @@
 \end{enumerate}
 
 
-\subsection{Journals}
+\subsection{Publications}
 \begin{enumerate}
 	\item Rasheed Abdul Haq K. P. and Harigovindan V. P. \enquote{Deep Learning Enhanced Virtual Sensing: A Cost-Effective Approach for Water Quality Monitoring in Aquaculture} \textit{IEEE Transactions on AgriFood Electronics}, June 2025.
 	\item Rasheed Abdul Haq K. P. and Harigovindan V. P., \enquote{Water Quality Prediction for Smart Aquaculture Using Hybrid Deep Learning Models}, \textit{IEEE Access}, vol. 10, pp. 60078-60098, June 2022. 
 	\item Rasheed Abdul Haq K. P. and Harigovindan V. P., \enquote{Water Quality Prediction System based on Adam Optimised LSTM Neural Network for Aquaculture: A Case Study in Kerala, India}, \textit{J. Inst. Eng. India Ser. B}, \textit{Springer}, 103, 2177--2188, October 2022.    
 	\item Rasheed Abdul Haq K. P. and Harigovindan V. P., \enquote{Accurate Dissolved Oxygen Prediction for Aquaculture Using Stacked Ensemble Machine Learning Model},  \textit{Natl. Acad. Sci. Lett.}, \textit{Springer}, 46, 203--207, January 2023. 
+	\item Rahul Gandh D, Harigovindan V P, Rasheed Abdul Haq K P, and Amrtha Bhide, \enquote{Attention-driven LSTM and GRU deep learning techniques for precise water quality prediction in smart aquaculture}, \textit{Aquaculture International}, vol. 32, pp. 8455--8478, 2024. \href{https://doi.org/10.1007/s10499-024-01574-5}{doi:10.1007/s10499-024-01574-5}.
 \end{enumerate}
 
 \subsection{MEA Engineering College, Perinthalmanna, Kerala, India}
@@ -193,7 +192,7 @@
 
 \subsection{Way in Electronic Solutions, Calicut, India}
 \textbf{Founder \& Senior Embedded Software Engineer} \\
-\hfill \textbf{August 2014 -- June 2017 (Part-time while serving as Assistant Professor)} (3 years 10 months)
+\hfill \textbf{August 2014 -- June 2017 (Part-time while serving as Assistant Professor)} (2 years 11 months)
 
 \begin{itemize}
 \item Co-founded an embedded systems startup delivering custom industrial automation, smart parking, medical-device testing, and intelligent monitoring solutions from concept through deployment.
@@ -230,7 +229,7 @@
 \item Analyzed network alarm trends and generated daily, weekly, and monthly operational reports to support performance monitoring, reliability improvements, and continuous network optimization.
 \end{itemize}
 
-\section{Pet AI Projects}
+\section{Personal AI Projects}
 \subsection{Arogyamitra — AI medical triage assistant for Telegram (Kerala, India)} \hfill \textbf{2025} \\
 \textit{LLM-driven chatbot that collects demographics and symptoms, triages risk, and recommends specialists.}
 \begin{itemize}
@@ -246,17 +245,17 @@
 \begin{itemize}
 	\item \textbf{Programming Languages:} Python, C++, MATLAB
 	
-	\item \textbf{AI/ML Expertise:} Predictive Modeling, Time-Series Forecasting, Statistical Learning, Machine Learning, Deep Learning, Computer Vision, Digital Twins, NLP, Generative AI, LLMs, Retrieval-Augmented Generation (RAG), Agentic AI
+	\item \textbf{AI/ML Expertise:} Predictive Modeling, Time-Series Forecasting, Statistical Learning, Machine Learning, Deep Learning, Computer Vision, Thermal Image Analysis, Instance Segmentation, Change Detection, Vision-Language Models, Digital Twins, NLP, Generative AI, LLMs, Retrieval-Augmented Generation (RAG), Agentic AI
 	
-	\item \textbf{Libraries/Frameworks:} PyTorch, TensorFlow, Keras, Scikit-Learn, YOLOv8, PyTorchVideo, Hugging Face Transformers, LangChain, NumPy, Pandas, Matplotlib, NLTK, spaCy
+	\item \textbf{Libraries/Frameworks:} PyTorch, TensorFlow, Keras, Scikit-Learn, OpenCV, YOLOv8/YOLO11, PyTorchVideo, Hugging Face Transformers, LangChain, NumPy, Pandas, Matplotlib, NLTK, spaCy
 	
-	\item \textbf{MLOps \& Cloud:} Azure ML, Azure AI Services, AWS Bedrock, MLflow, Git
+	\item \textbf{MLOps \& Cloud:} Azure ML, Managed Endpoints, Model Registry, Multi-model Orchestration, Azure Functions, Azure AI Services, AWS Bedrock, MLflow, Git
 	
 	\item \textbf{Vector Databases \& Retrieval:} FAISS, Pinecone
 	
 	\item \textbf{Operating Systems:} Linux, Windows
 	
-	\item \textbf{Professional Skills:} Technical Leadership, Cross-functional Collaboration, Technical Mentoring, Stakeholder Communication, Technical Documentation
+	\item \textbf{Professional Skills:} Technical Leadership, Cross-functional Collaboration, Technical Mentoring, Stakeholder Communication, Annotation Standards, Model Verification, UAT, Technical Documentation
 \end{itemize}
 	
 \section*{References}

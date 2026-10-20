@@ -72,9 +72,9 @@ def update_web(source):
 
 def sync(source, pdf, update_pages=True):
     source, pdf = source.resolve(), pdf.resolve()
-    match = re.search(r'_Resume_(\d{2})([A-Z]{3})(\d{4})\.tex$', source.name)
+    match = re.search(r'_Resume_(\d{2})([A-Z]{3})(\d{4})(?:_r\d{2,})?\.tex$', source.name)
     if not match:
-        raise ValueError('Expected local filename: Rasheed_Abdul_Haq_Resume_DDMMMYYYY.tex')
+        raise ValueError('Expected local filename: Rasheed_Abdul_Haq_Resume_DDMMMYYYY.tex (optional _r02 suffix)')
     months = 'JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC'.split()
     date = datetime(int(match[3]), months.index(match[2]) + 1, int(match[1])).date().isoformat()
     if not source.is_file() or not pdf.is_file() or not pdf.read_bytes().startswith(b'%PDF-'):

@@ -48,6 +48,9 @@ class Retention(unittest.TestCase):
             self.assertEqual(len(list((root/'cv').glob('*/resume.tex'))), 2)
             with self.assertRaises(ValueError):
                 sync('04AUG2026', 'Old')
+            sync('12NOV2026_r02', 'November revised')
+            self.assertEqual((root/'cv/previous/resume.tex').read_text(), 'October revised')
+            self.assertEqual((root/'cv/latest/resume.tex').read_text(), 'November revised')
             metadata = json.loads((root/'cv/versions.json').read_text())
             self.assertEqual(metadata['latest']['date'], '2026-11-12')
             self.assertEqual(metadata['previous']['date'], '2026-10-12')
